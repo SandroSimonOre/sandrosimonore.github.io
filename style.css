@@ -1,3 +1,20 @@
 * {
-    background-color: yellow;
+    border: 5px solid red;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    width: 60px;
+}
+
+header nav {
+    display: inline-block;
 }
