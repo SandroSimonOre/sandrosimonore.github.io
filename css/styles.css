@@ -180,7 +180,8 @@ footer .social-media div img {
     top: 0;
     height: 100vh;
     padding-top: 7px;
-    opacity: 0.5;
+    opacity: 0;
+    pointer-events: none;
   }
   header nav ul {
     display: flex;
@@ -188,6 +189,7 @@ footer .social-media div img {
     justify-content: space-evenly;
     align-items: center;
     line-height: 80px;
+    opacity: 1;
   }
   header nav ul li {
     font-size: 25px;
@@ -205,10 +207,24 @@ footer .social-media div img {
   }
   header .open-menu {
     display: block;
+    background: none;
   }
   header .open-menu img {
     height: 60px;
     width: 60px;
+  }
+
+  main .hero {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .hero .foto {
+    width: 100%;
+  }
+  main .hero .foto img {
+    border-radius: 0%;
+    width: 100%;
   }
 
   footer {
@@ -223,6 +239,11 @@ footer .social-media div img {
   footer .social-media {
     border: none;
     width: 100%;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
