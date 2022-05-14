@@ -7,59 +7,156 @@
 
 a {
   text-decoration: none;
-  display: inline;
 }
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+header, main, footer {
+  width: 100%;
+  margin: 1px auto 0;
 }
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  height: 100px;
-  box-shadow: 10px 20px 100px gray;
-  line-height: 50px;
+  align-items: center;
+  background-color: white;
+  opacity: 1;
+  height: 75px;
+  box-shadow: 0 4px 5px gray;
 }
-header span {
-  padding: 20px;
+header .logo {
+  display: flex;
+  width: 45%;
+  padding-left: 50px;
+}
+header .logo a {
+  display: flex;
+  user-select: none;
+}
+header .logo a .llave {
+  font-size: 40px;
+  color: black;
+}
+header .logo a .texto {
+  text-align: center;
+  color: black;
+}
+header .logo a .texto :nth-child(1) {
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+}
+header .logo a .texto :nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 9px;
+}
+header nav {
+  padding-right: 2%;
+  width: 50%;
 }
 header nav ul {
   display: flex;
   justify-content: space-evenly;
-  list-style: none;
   text-transform: uppercase;
 }
 header nav ul li {
-  margin: 20px;
   letter-spacing: 1.5px;
+  font-size: 14px;
+}
+header nav ul li a {
+  color: black;
+}
+header nav ul li :hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+header nav ul .close-menu {
+  display: none;
+}
+header .open-menu {
+  display: none;
 }
 
+main .espaciador {
+  height: 100px;
+}
 main .hero {
   display: flex;
 }
 main .hero .foto {
   width: 50%;
-  background-color: red;
   height: 400px;
+  display: flex;
+}
+main .hero .foto img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  align-self: center;
+  margin: 0 auto;
 }
 main .hero .saludo {
+  padding: 80px;
   width: 50%;
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+}
+main .hero .saludo .presentation {
+  padding-top: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+main .skills {
+  display: flex;
+}
+main .skills div {
+  width: 50%;
   height: 400px;
 }
 
 footer {
   background-color: black;
-  height: 300px;
-  padding: 30px;
+  height: 160px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .links {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+footer .links ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .links ul li {
+  letter-spacing: 2px;
+}
+footer .links ul li a {
+  color: white;
 }
 footer .social-media {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
+  align-items: center;
+  width: 40%;
+  border-left: 1px solid white;
 }
 footer .social-media div {
   background-color: white;
@@ -67,8 +164,66 @@ footer .social-media div {
   border-radius: 50%;
 }
 footer .social-media div img {
-  text-align: center;
-  height: 40px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 950px) {
+  header .logo {
+    display: flex;
+    padding-left: 5px;
+  }
+  header nav {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    padding-top: 7px;
+    opacity: 0.5;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 80px;
+  }
+  header nav ul li {
+    font-size: 25px;
+  }
+  header nav ul li a {
+    color: white;
+  }
+  header nav ul .close-menu {
+    display: block;
+    align-self: flex-end;
+  }
+  header nav ul .close-menu img {
+    height: 60px;
+    width: 60px;
+  }
+  header .open-menu {
+    display: block;
+  }
+  header .open-menu img {
+    height: 60px;
+    width: 60px;
+  }
+
+  footer {
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+  }
+  footer .links {
+    display: none;
+  }
+  footer .social-media {
+    border: none;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
