@@ -1,0 +1,321 @@
+@forward 'globals';
+
+body{
+    position: relative;
+}
+
+header, main, footer {
+    width: 100%;
+    margin: 1px auto 0;
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    opacity: 1;
+    
+    height: 75px;
+    box-shadow: 0 4px 5px gray;
+
+    .logo {
+        display: flex;
+        width: 45%;
+        padding-left: 50px;
+
+        a {
+            display: flex;
+            user-select: none;
+
+            .llave {
+                font-size: 40px;
+                color: black;
+            }
+
+            .texto {
+
+                text-align: center;
+                color: black;
+
+                :nth-child(1){
+                    font-size: 32px;
+                    letter-spacing: 1px;
+                    font-weight: bolder;
+                    font-family: 'Courier New', Courier, monospace;
+
+                }
+                :nth-child(2){
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    font-weight: bolder;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    
+    nav {
+        padding-right: 2%;
+        width: 50%;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+ 
+            li {
+                letter-spacing: 1.5px;
+                font-size: 14px;
+                
+                a {
+                    color: black;
+                }
+
+                :hover {
+                    font-weight: bolder;
+                    text-decoration: underline;
+                }
+            }
+
+            .close-menu {
+                display: none;
+            }
+        }
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    
+}
+
+
+main {
+
+    .espaciador {
+        height: 100px;
+    }
+
+    .hero {
+    
+        display: flex;
+        .foto{
+            width: 50%;
+            height: 400px;
+            display: flex;
+
+            img {
+
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                align-self: center;
+                margin: 0 auto;
+            }
+        }
+
+        .saludo{
+            padding: 80px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 400px;
+
+            .presentation{
+                padding-top: 40px;
+                line-height: 40px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+
+        div{
+            width: 50%;
+            height: 400px;
+        }
+    }    
+}
+
+footer {
+
+    background-color: black;
+    height: 160px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+
+
+    .links {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        
+        ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            li  {
+
+                letter-spacing: 2px;
+                a{
+                    color: white;
+    
+                }
+                
+            }
+
+        }
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+        border-left: 1px solid white;
+
+        div {
+            background-color: white;
+            padding: 10px;    
+            border-radius: 50%;
+            
+            img {
+                width: 24px;
+                height: 24px;
+            }
+    
+        }
+
+        
+    }
+
+}
+
+
+
+
+@media (max-width: 950px) {
+
+    header {
+        .logo {
+
+            display: flex;
+            padding-left: 5px;
+    
+        }
+    
+        nav {
+            // padding-right: 2%;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            top :0;
+            height: 100vh;
+            padding-top: 7px;
+            opacity: 0;
+
+            // investigar si lo siguiente es correcto
+            // o si hay otra forma de hacerlo mejor
+            pointer-events: none;
+            
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                // text-transform: uppercase;
+                line-height: 80px;
+                opacity: 1;
+                li {
+                    font-size: 25px;
+                    a {
+                        color: white
+                        
+                    }
+                }
+
+                
+                .close-menu {
+                    display: block;
+                    // justify-self: ;
+                    // background: none;
+                    align-self: flex-end;
+                    // justify-self: flex-start;
+                    
+                    img {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        .open-menu {
+            display: block;
+            background: none;
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+
+    main {
+        .espaciador {
+            // display: none;
+        }
+        .hero {
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            .foto {
+                width: 100%;
+
+                img {
+                    border-radius: 0%;
+                    width: 100%;
+                    // height: ;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        height: 80px;
+        .links {
+            display: none;
+        }
+
+        .social-media {
+            border: none;
+            width: 100%;
+            // align-content: center;
+            // justify-content: center;
+        }
+    }
+
+    .menu_opened {
+        opacity: 1;
+        // display: block;
+        pointer-events: all;
+        // background-color: aqua;
+
+    }
+    
+}
+
+
