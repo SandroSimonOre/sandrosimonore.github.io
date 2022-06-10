@@ -39,7 +39,10 @@ header .logo {
 }
 header .logo a {
   display: flex;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 header .logo a .llave {
   font-size: 40px;
@@ -119,12 +122,20 @@ main .hero .saludo .presentation {
   line-height: 40px;
   letter-spacing: 1px;
 }
-main .skills {
+main .skills .technologies {
   display: flex;
+  flex-direction: column;
 }
-main .skills div {
-  width: 50%;
-  height: 400px;
+main .skills .technologies .technologies-logos {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main .skills .technologies .technologies-logos img {
+  width: 80%;
+  height: 200px;
 }
 
 footer {
@@ -245,6 +256,4 @@ footer .social-media div img {
     opacity: 1;
     pointer-events: all;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
