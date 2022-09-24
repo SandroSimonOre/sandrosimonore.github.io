@@ -40,8 +40,9 @@
                         <img src="./img/button-close.svg" alt="">
                     </button>
     
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                     
                 </ul>
             </nav>
@@ -74,21 +75,34 @@
     <main>
     
         <!-- hero -->
-        <section class="hero">
-
-            <div class="saludo">
-                <h1>Hello, I'm Sandro Simón</h1>
-            </div>    
+        <section class="hero">   
             
             <div class="presentation">
+                <h1>Hello, I'm Sandro Simón</h1>
+                <br>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum commodi eaque quos tempora voluptate labore. Eaque, doloremque id, molestiae blanditiis odio ea eveniet itaque minima sapiente eligendi accusantium harum?
                 </p>
             </div>
+
+            <div class="illustration">
+                <img src="./img/software-dev.svg" alt="">
+            </div> 
                 
         </section>
 
-        <section class="portfolio">
+        <section id='about-me' class="about-me">
+            <h2>ABOUT ME</h2>
+            <ul >
+                <li>I'm accountant by profession who is changint his career</li>
+                <li>I've been working as accountant for twetnty years and in that work begain my love</li>
+                <li>So, while I was working as an accountan I buil programs with Excel VBA</li>
+                <li>Currently I'm studyng in Platzi</li>
+                
+            </ul>
+        </section>
+
+        <section id="portfolio" class="portfolio">
             <h2>PORTFOLIO</h2>
             <article class="project">
                 <div class="screenshot">
@@ -111,20 +125,26 @@
             </article>
             
         </section>
-
-        <section class="about-me">
-            <h2>ABOUT ME</h2>
-            <ul >
-                <li>I'm accountant by profession who is changint his career</li>
-                <li>I've been working as accountant for twetnty years and in that work begain my love</li>
-                <li>So, while I was working as an accountan I buil programs with Excel VBA</li>
-                <li>Currently I'm studyng in Platzi</li>
-                
-            </ul>
-        </section>
         
         <section class="certifications">
             <h2>CERTIFICATIONS</h2>
+            <article class="certification">
+                <div class="screenshot">
+                    <img src="./img/certification-platzi-frontend-react.jpg" alt="">
+                </div>
+                <div class="overview">
+                    <h4>FRONTEND CON REACT.JS</h4>
+                    <h5>(PLATZI)</h5>
+                    <br>
+                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
+                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
+                        Intersection Observer.
+                    </p>
+                    <br><br>
+                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
+
+                </div>
+            </article>
             <article class="certification">
                 <div class="screenshot">
                     <img src="./img/certification-platzi-javascript.jpg" alt="">
@@ -159,23 +179,7 @@
 
                 </div>
             </article>
-            <article class="certification">
-                <div class="screenshot">
-                    <img src="./img/certification-platzi-frontend-react.jpg" alt="">
-                </div>
-                <div class="overview">
-                    <h4>FRONTEND CON REACT.JS</h4>
-                    <h5>(PLATZI)</h5>
-                    <br>
-                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
-                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
-                        Intersection Observer.
-                    </p>
-                    <br><br>
-                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
-
-                </div>
-            </article>
+            
 
         </section>
 
@@ -198,7 +202,7 @@
             
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>CONTACT</h2>
             <div class="contact-info">
                 <p><span>Email:</span>  sandrosimonore@gmail.com</p>

@@ -109,33 +109,39 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
 }
 main .hero {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
-  height: 25rem;
+  padding-top: 6rem;
+}
+main .hero .illustration {
+  width: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
-  background-repeat: no-repeat;
-  color: white;
 }
-main .hero .saludo {
-  width: 25%;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 5rem;
-}
-main .hero .saludo h1 {
-  text-shadow: 1px;
+main .hero .illustration img {
+  width: 80%;
 }
 main .hero .presentation {
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 1.3rem;
+}
+main .hero .presentation h1 {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+main .hero .presentation p {
+  width: 70%;
   line-height: 2rem;
-  letter-spacing: 1px;
+  font-size: 1.3rem;
 }
 main .portfolio {
   margin-top: 7rem;
@@ -219,7 +225,7 @@ main .certifications .certification .screenshot {
   width: 50%;
 }
 main .certifications .certification .screenshot img {
-  height: 20rem;
+  height: 15rem;
   border-radius: 5px;
 }
 main .certifications .certification .overview {
