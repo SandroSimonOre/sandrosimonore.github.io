@@ -21,7 +21,7 @@ header {
   align-items: center;
   background-color: white;
   height: 5rem;
-  box-shadow: 0 4px 5px gray;
+  box-shadow: 0 0 4px gray;
 }
 header .logo-container {
   width: 30%;
@@ -123,7 +123,7 @@ main .hero .illustration {
   align-items: center;
 }
 main .hero .illustration img {
-  width: 80%;
+  width: 60%;
 }
 main .hero .presentation {
   width: 50%;
