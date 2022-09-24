@@ -14,46 +14,55 @@
     
     <header>
         
-        <!-- <img src="/img/mf-logo.svg" alt="Logotipo"> -->
-        
-        <div class="logo">
+        <div class="logo-container">
+            <div class="logo">
 
-            <a href="http://">
-                <!-- <img src="./img/logo.png" alt="logo"> -->
-                <span class="llave">{&nbsp;</span>
-
-                <!-- <div> -->
-                    <!-- <p>sandroSimon</p> -->
-                    <!-- <p>full stack developer</p> -->
-                <!-- </div> -->
-                <div class="texto">
-                    <p>sandroSimon</p>
-                    <p>full stack developer</p>
-                </div>
-                
-                
-                <span class="llave">&nbsp;}</span>
-                
-            </a>
-                
+                <a href="/">
+                    
+                    <span class="llave">{&nbsp;</span>
+    
+                    <div class="texto">
+                        <p class="name">sandroSimon</p>
+                        <p class="position">full stack developer</p>
+                    </div>
+                    
+                    <span class="llave">&nbsp;}</span>
+                    
+                </a>
+                    
+            </div>    
         </div>
         
+        <div class="navbar-container">
+            <nav>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Close menu">
+                        <img src="./img/button-close.svg" alt="">
+                    </button>
+    
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact me</a></li>
+    
+                </ul>
+            </nav>
+        </div>
         
-        
-        <nav>
-            <ul class="menu">
-                <button class="close-menu" aria-label="Close menu">
-                    <img src="./img/button-close.svg" alt="">
-                </button>
+        <div class="social-media-container">
+            <ul>
+                <li>
+                    <a href="http://">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="">
+                    </a>
+                </li>
+            </ul>            
+        </div>
 
-                <li><a href="">About me</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact me</a></li>
-                
-                
-
-            </ul>
-        </nav>
         <button class="open-menu" aria-label="Open menu">
             <img src="./img/button-burger.svg" alt="">
         </button>
@@ -62,73 +71,121 @@
     </header>
 
     <main>
-        <section class="espaciador">
-
-        </section>
-
+    
         <!-- hero -->
         <section class="hero">
 
-            <div class="foto">
-                <img src="./img/photo.jpeg" alt="">
-                
-            </div>
-            
             <div class="saludo">
-                
-                <h1>Hola, yo soy Sandro...</h1>
-                <div class="presentation">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum commodi eaque quos tempora voluptate labore. Eaque, doloremque id, molestiae blanditiis odio ea eveniet itaque minima sapiente eligendi accusantium harum?
-                    </p>
-                </div>
-                
+                <h1>Hello, I'm Sandro Simón</h1>
+            </div>    
+            
+            <div class="presentation">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum commodi eaque quos tempora voluptate labore. Eaque, doloremque id, molestiae blanditiis odio ea eveniet itaque minima sapiente eligendi accusantium harum?
+                </p>
             </div>
+                
+        </section>
+
+        <section class="portfolio">
+            <h2>My portfolio</h2>
+            <article class="project">
+                <div class="screenshot">
+                    <img src="./img//portfolio-movies-app.jpg" alt="">
+                </div>
+                <div class="overview">
+                    <h3>Movie App</h3>
+                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
+                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
+                        Intersection Observer.
+                    </p>
+
+                    <div class="buttons-container">
+                        <a class="button" href="">Live version</a>
+                        <a class="button" href="">Go to Github</a>
+                    </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+
+        
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <article class="certification">
+                <div class="screenshot">
+                    <img src="./img/certification-platzi-javascript.jpg" alt="">
+                </div>
+                <div class="overview">
+                    <h3>Java Script</h3>
+                    <h4>Platzi</h4>
+                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
+                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
+                        Intersection Observer.
+                    </p>
+
+                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/100-javascript-full-stack/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
+
+                </div>
+            </article>
+            <article class="certification">
+                <div class="screenshot">
+                    <img src="./img/certification-freecodecamp-algorithms.jpg" alt="">
+                </div>
+                <div class="overview">
+                    <h3>Data Structure</h3>
+                    <h6>FreeCodeCamp</h6>
+                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
+                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
+                        Intersection Observer.
+                    </p>
+
+                    <a class="button" href="https://www.freecodecamp.org/certification/sandrosimon/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">See in FreeCodeCamp</a>
+
+                </div>
+            </article>
+            <article class="certification">
+                <div class="screenshot">
+                    <img src="./img/certification-platzi-frontend-react.jpg" alt="">
+                </div>
+                <div class="overview">
+                    <h3>FrontEnd Developer</h3>
+                    <h6>Platzi</h6>
+                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
+                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
+                        Intersection Observer.
+                    </p>
+
+                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
+
+                </div>
+            </article>
 
         </section>
 
         <section class="skills">
-
-            <div class = "technologies">
-
-                <h1>Technologies I work with</h1>
-
-                <div class=" technologies-logos">
-
-                    <div id="javascript">
-                        <img src="./img/logo-javascript.jpg" alt="">
-                    </div>
-
-                    <div id="nodejs">
-                        <img src="./img/logo-nodejs.png" alt="">
-                    </div>
-
-                    <div id="vscode">
-                        <img src="./img/logo-vscode.png" alt="">
-                    </div>
-
-                    <div id="postgres">
-                        <img src="./img/logo-postgres.png" alt="">
-                    </div>
-
-                    <div id="mongodb">
-                        <img src="./img/logo-mongodb.png" alt="">
-                    </div>
-
-                    <div id="github">
-                        <img src="./img/logo-github.png" alt="">
-                    </div>
-
-                    <div id="reactjs">
-                        <img src="./img/logo-reactjs.png" alt="">
-                    </div>
-
-                    <div id="linux">
-                        <img src="./img/logo-linux.png" alt="">
-                    </div>
-                </div>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">JavaScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Postgres</div>
+                <div class="skill">Sass</div>
+                <div class="skill">React.js</div>
+                <div class="skill">Git / Github</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Express</div>
+                <div class="skill">Nest js</div>
+                <div class="skill">Next js</div>
+                <div class="skill">Python</div>
             </div>
+            
+        </section>
 
+        <section class="contact">
+            <h2>Contact</h2>
+            <p><span>Email:</span> sandrosimonore@gmail.com</p>
+            <p><span>Cellphone:</span>+51 940 279 718</p>
         </section>
 
     </main>
@@ -145,34 +202,34 @@
 
         <!-- Social media -->
         <section class="social-media">
-            <div>
-                <a href="https://linkedin.com/in/sandrosimonore/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/linkedin.svg" alt="">
-                </a>
-            </div>
-
-            <div>
+            <div class="icon-container">
                 
+                <a href="https://linkedin.com/in/sandrosimonore/" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111532.png" alt="">
+                    </div>
+                    <div>
+                        <span class="title">Linkedin</span>
+                    </div>
+                </a>
+            
+            </div>
+            
+            <div class="icon-container">
                 <a href="https://github.com/sandrosimonore" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/github.svg" alt="">
+                    <div class="icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" alt="">
+                    </div>
+                    <div class="title">
+                        <span >Github</span>
+                    </div>
                 </a>
             </div>
             
-            <div>
-                <a href="https://www.youtube.com/channel/UCn7aatQPwa_yyMidnuu_Gsw" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/youtube.svg" alt="">
-                </a>
-            </div>
-
-            <div>
-                <a href="https://wa.me/51940279718" target="_blank rel="noopener noreferrer">
-                    <img src="./img/whatsapp.svg" alt="WhatsApp">
-                </a>
-            </div>
+        
         </section>
 
     </footer>
 
-   
 </body>
 </html>

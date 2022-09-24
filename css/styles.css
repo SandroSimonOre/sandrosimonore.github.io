@@ -13,145 +13,268 @@ ul {
   list-style: none;
 }
 
-body {
-  position: relative;
-}
-
-header, main, footer {
-  width: 100%;
-  margin: 1px auto 0;
-}
-
 header {
+  width: 100%;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: white;
-  opacity: 1;
-  height: 75px;
+  height: 5rem;
   box-shadow: 0 4px 5px gray;
 }
-header .logo {
-  display: flex;
-  width: 45%;
-  padding-left: 50px;
+header .logo-container {
+  width: 30%;
 }
-header .logo a {
+header .logo-container .logo {
+  display: flex;
+}
+header .logo-container .logo a {
   display: flex;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-header .logo a .llave {
-  font-size: 40px;
+header .logo-container .logo a .llave {
+  font-size: 3rem;
   color: black;
 }
-header .logo a .texto {
+header .logo-container .logo a .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: black;
 }
-header .logo a .texto :nth-child(1) {
-  font-size: 32px;
-  letter-spacing: 1px;
+header .logo-container .logo a .texto .name {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
   font-weight: bolder;
   font-family: "Courier New", Courier, monospace;
 }
-header .logo a .texto :nth-child(2) {
+header .logo-container .logo a .texto .position {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.2rem;
   font-weight: bolder;
-  font-size: 9px;
+  font-size: 0.7rem;
 }
-header nav {
-  padding-right: 2%;
+header .navbar-container {
   width: 50%;
+  font-weight: bolder;
 }
-header nav ul {
+header .navbar-container nav ul {
   display: flex;
   justify-content: space-evenly;
   text-transform: uppercase;
 }
-header nav ul li {
+header .navbar-container nav ul li {
   letter-spacing: 1.5px;
   font-size: 14px;
 }
-header nav ul li a {
+header .navbar-container nav ul li a {
   color: black;
 }
-header nav ul li :hover {
+header .navbar-container nav ul li :hover {
   font-weight: bolder;
   text-decoration: underline;
 }
-header nav ul .close-menu {
+header .navbar-container nav ul .close-menu {
   display: none;
+}
+header .social-media-container {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+}
+header .social-media-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 6rem;
+}
+header .social-media-container ul img {
+  width: 1.5rem;
 }
 header .open-menu {
   display: none;
 }
 
-main .espaciador {
-  height: 100px;
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
+  padding-top: 5rem;
 }
 main .hero {
   display: flex;
-}
-main .hero .foto {
-  width: 50%;
-  height: 400px;
-  display: flex;
-}
-main .hero .foto img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  align-self: center;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 25rem;
+  align-items: center;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100%;
 }
 main .hero .saludo {
-  padding: 80px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+  width: 25%;
+  font-size: 2rem;
   text-align: center;
-  height: 400px;
+  line-height: 5rem;
 }
-main .hero .saludo .presentation {
-  padding-top: 40px;
-  line-height: 40px;
+main .hero .saludo h1 {
+  text-shadow: 1px;
+}
+main .hero .presentation {
+  width: 40%;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
   letter-spacing: 1px;
 }
-main .skills .technologies {
+main .portfolio {
+  margin-top: 2rem;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border: 1px solid pink;
+  text-align: center;
+  border: 1px solid green;
 }
-main .skills .technologies .technologies-logos {
-  width: 80%;
-  margin: 50px auto;
+main .portfolio h2 {
+  line-height: 3rem;
+}
+main .portfolio .project {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+}
+main .portfolio .project .screenshot {
+  width: 50%;
+}
+main .portfolio .project .screenshot img {
+  width: 25rem;
+  border-radius: 5px;
+}
+main .portfolio .project .overview {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .portfolio .project .overview h3 {
+  line-height: 4rem;
+}
+main .portfolio .project .overview p {
+  line-height: 1.5rem;
+}
+main .portfolio .project .overview .buttons-container .button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  width: 8rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 5px;
+}
+main .certifications {
+  margin-top: 2rem;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid pink;
+  text-align: center;
+  border: 1px solid green;
+}
+main .certifications h2 {
+  line-height: 3rem;
+}
+main .certifications .certification {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+}
+main .certifications .certification .screenshot {
+  width: 50%;
+}
+main .certifications .certification .screenshot img {
+  width: 25rem;
+  border-radius: 5px;
+}
+main .certifications .certification .overview {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .certifications .certification .overview h3 {
+  line-height: 4rem;
+}
+main .certifications .certification .overview p {
+  line-height: 1.5rem;
+}
+main .certifications .certification .overview .button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  width: 12rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 5px;
+}
+main .skills {
+  width: 70%;
+  text-align: center;
+}
+main .skills h2 {
+  line-height: 3rem;
+}
+main .skills .skills-container {
+  padding: 2rem 0 8rem 0;
   display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  height: 16rem;
 }
-main .skills .technologies .technologies-logos img {
-  width: 80%;
-  height: 200px;
+main .skills .skills-container .skill {
+  width: 8rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 0.1px solid gray;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
 }
 
 footer {
   background-color: black;
-  height: 160px;
-  padding: 20px 20px;
+  height: 15rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
 }
 footer .links {
-  width: 60%;
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
 }
 footer .links ul {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -167,16 +290,33 @@ footer .social-media {
   justify-content: space-evenly;
   align-items: center;
   width: 40%;
-  border-left: 1px solid white;
 }
-footer .social-media div {
-  background-color: white;
-  padding: 10px;
+footer .social-media .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .social-media .icon-container .icon {
   border-radius: 50%;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
-footer .social-media div img {
-  width: 24px;
-  height: 24px;
+footer .social-media .icon-container .icon img {
+  width: 2rem;
+  height: 2rem;
+}
+footer .social-media .icon-container .title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  letter-spacing: 1.3px;
 }
 
 @media (max-width: 950px) {
@@ -224,7 +364,6 @@ footer .social-media div img {
     height: 60px;
     width: 60px;
   }
-
   main .hero {
     padding: 0;
     flex-direction: column;
@@ -237,12 +376,10 @@ footer .social-media div img {
     border-radius: 0%;
     width: 100%;
   }
-
   footer {
     flex-direction: column;
     position: fixed;
     bottom: 0;
-    height: 80px;
   }
   footer .links {
     display: none;
@@ -251,7 +388,6 @@ footer .social-media div img {
     border: none;
     width: 100%;
   }
-
   .menu_opened {
     opacity: 1;
     pointer-events: all;
