@@ -1,18 +1,27 @@
 @forward 'globals';
 
-//* {
-    //box-sizing: border-box;
-    //margin:0;
-    //padding: 0;
-//}
+@mixin button($name, $b-color, $f-color, $width, $height, $line-height) {
+    .#{$name} {
+        display: inline-block;
+        background-color: #{$b-color};
+        color: #{$f-color};
+        width: #{$width}rem;
+        height: #{$height}rem;;
+        line-height: #{$line-height}rem;
+        border-radius: 5px;
+        user-select: none;
+        text-align: center;
+        
+    }
+}
 
-
-
-//body{
-    //position: relative;
-    //background-color: white;
-//}
-
+@mixin flex-section($class-name, $width ) {
+    
+    .#{$class-name} {
+        margin-top: 5rem;
+        width: #{$width};
+    }
+}
 
 
 header {
@@ -134,12 +143,16 @@ header {
 
 
 main {
+    /*
+    section, div {
+        border: 0.1px solid blue;
+    }
+    */
+    
     width: 100%;
-    //height: 100rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid blue;
     padding-top: 5rem;
     
     .hero {
@@ -151,20 +164,15 @@ main {
         align-items: center;
         background-image: url('../img/hero.jpg');
         background-repeat:no-repeat;
-        background-size: auto;
-        background-size: 100%;
-
-        //border: 0.1rem solid green;
+        color: white;
         
         .saludo {
             //padding: 80px;
             width: 25%;
-            
             font-size: 2rem;
             text-align: center;
             line-height: 5rem;
-            //border: 1px solid yellow;
-
+        
             h1 {
                 //color: white;
                 text-shadow: 1px;
@@ -172,39 +180,32 @@ main {
         }
 
         .presentation {
+        
             width: 40%;
             text-align: center;
             font-size: 1.3rem;
-            //padding: 1.5rem 4rem 0 0;
             line-height: 2rem;
             letter-spacing: 1px;
 
-            //border: 1px solid yellow;
         }
     }
 
     .portfolio {
-        margin-top: 2rem;
-        width: 90%;
+        margin-top: 7rem;
+        width: 75%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid pink;
-        text-align: center;
-        //line-height: 6rem;
-        border: 1px solid green;
-
+        
         h2 {
-            line-height: 3rem;
+            text-align: center;
         }
         .project {
-            border: 1px solid red;
-
+            padding-top: 4rem;
             display: flex;
             justify-content: space-between;    
             align-items: center;
-            height: 20rem;
             
             .screenshot {
                 width: 50%;
@@ -218,60 +219,66 @@ main {
             .overview {
                 display: flex;
                 flex-direction: column;
-                //justify-content: flex-start;
+                align-items: center;
                 width: 50%;
                 h3 {    
                   line-height: 4rem;  
                 }
-                //text-align: center;
                 p {
                     line-height: 1.5rem;
                 }
 
                 .buttons-container {
-                    .button {
-                        display: inline-block;
-                        text-decoration: none;
-                        color: white;
-                        background-color: black;
-                        width: 8rem;
-                        height: 2rem;
-                        line-height: 2rem;
-                        border-radius: 5px;
-                    }
+                    
+                    @include button('button', green, white, 8, 2, 2);
+                    
                 }
             }
         }
     }
 
+    .about-me {
+        
+        margin-top: 7rem;
+        width: 75%;
+        
+        h2 {
+            text-align: center;
+        }
+        
+        ul {
+            margin-top: 2rem;
+            padding-left: 2rem;
+            line-height: 2rem;
+        }
+
+    }
+
     .certifications {
-        margin-top: 2rem;
-        width: 90%;
-        height: auto;
+        
+        margin-top: 7rem;
+        width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid pink;
-        text-align: center;
-        //line-height: 6rem;
-        border: 1px solid green;
-
+        
         h2 {
-            line-height: 3rem;
+            text-align: center;
         }
-        .certification {
-            border: 1px solid red;
 
+        .certification {
+            padding-top: 4rem;
             display: flex;
             justify-content: space-between;    
             align-items: center;
-            height: 20rem;
+            //height: 28rem;
             
             .screenshot {
                 width: 50%;
                 
                 img {
-                    width: 25rem;
+                    //width: 25rem;
+                    height: 20rem;
                     border-radius: 5px;
                 };
             }
@@ -279,103 +286,89 @@ main {
             .overview {
                 display: flex;
                 flex-direction: column;
-                //justify-content: flex-start;
+                align-items: center;
                 width: 50%;
                 h3 {    
                   line-height: 4rem;  
                 }
-                //text-align: center;
+
                 p {
                     line-height: 1.5rem;
                 }
 
-                    .button {
-                        display: inline-block;
-                        text-decoration: none;
-                        color: white;
-                        background-color: black;
-                        width: 12rem;
-                        height: 2rem;
-                        line-height: 2rem;
-                        border-radius: 5px;
-                    }
+                @include button('button', green, white, 12, 2, 2);
                 
             }
         }
     }
 
     .skills {
-        width: 70%;
-        //height: 20rem;
-        text-align: center;
-        h2 {
-            line-height: 3rem;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        padding-top: 7rem;
+        //text-align: center;
+        
         .skills-container {
-            padding: 2rem 0 8rem 0;
+            width: 70%;
+            padding-top: 3rem;
             display: grid;
             justify-content: center;
             align-items: center;
             grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
-            height: 16rem;
 
-            .skill {
-                width: 8rem;
-                height: 2rem;
-                line-height: 2rem;
-                border: 0.1px solid gray;
-                border-radius: 5px;
-                background-color: black;
-                color: white;
-            }
+            @include button('skill', black, white, 8, 2, 2);
+            .skill {margin: auto;}
         }
 
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        padding: 7rem 0 3rem 0;
+        
+        h2 {
+            text-align: center;
+        }
 
-    }    
+        .contact-info {
+            
+            width: 60%;
+            margin-top: 2rem;
+            line-height: 2rem;
+            display: flex;
+            justify-content: space-between;
+        
+            span {
+                font-weight: bolder;
+            }
+        }
+       
+    }
 }
 
 footer {
 
     background-color: black;
-    height: 15rem;
+    height: 10rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    //flex-direction: column;
+    justify-content: center;
     font-size: 0.9rem;
-    padding-bottom: 3rem;
+    //padding-bottom: 3rem;
 
-
-    .links {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        
-        ul {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            
-            li  {
-
-                letter-spacing: 2px;
-                a {
-                    color: white;
-    
-                }
-                
-            }
-
-        }
-    }
 
     .social-media {
+
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        width: 40%;
+        width: 30%;
         
         .icon-container {
 
@@ -415,6 +408,11 @@ footer {
     }
 
 }
+
+
+
+
+
 
 
 // MEDIA QUERY
