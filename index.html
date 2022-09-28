@@ -7,14 +7,14 @@
     <title>Sandro Simón</title>
     <link rel="stylesheet" href="./css/styles.css">
 
-    <script defer src="./js/script.js"></script>
+    
 </head>
     
 <body>
     
-    <header>
+    <header class="header">
         
-        <div class="logo-container">
+        <div class="header__logo-container">
             <div class="logo">
 
                 <a href="/">
@@ -33,7 +33,7 @@
             </div>    
         </div>
         
-        <div class="navbar-container">
+        <div class="header__navbar-container">
             <nav>
                 <ul class="menu">
                     <button class="close-menu" aria-label="Close menu">
@@ -48,7 +48,7 @@
             </nav>
         </div>
         
-        <div class="social-media-container">
+        <div class="header__social-media-container">
             <ul>
                 <li>
                     <a href="https://linkedin.com/in/sandrosimonore" target="_blank" rel="noopener noreferrer">
@@ -65,17 +65,12 @@
             </ul>            
         </div>
 
-        <button class="open-menu" aria-label="Open menu">
-            <img src="./img/button-burger.svg" alt="">
-        </button>
-        
-
     </header>
 
-    <main>
+    <main class="main">
     
         <!-- hero -->
-        <section class="hero">   
+        <section class="main__hero">   
             
             <div class="presentation">
                 <h1>Hello, I'm Sandro Simón</h1>
@@ -91,18 +86,7 @@
                 
         </section>
 
-        <section id='about-me' class="about-me">
-            <h2>ABOUT ME</h2>
-            <ul >
-                <li>I'm accountant by profession who is changint his career</li>
-                <li>I've been working as accountant for twetnty years and in that work begain my love</li>
-                <li>So, while I was working as an accountan I buil programs with Excel VBA</li>
-                <li>Currently I'm studyng in Platzi</li>
-                
-            </ul>
-        </section>
-
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="main__portfolio">
             <h2>PORTFOLIO</h2>
             <article class="project">
                 <div class="screenshot">
@@ -126,7 +110,18 @@
             
         </section>
 
-        <section class="skills">
+        <section id='about-me' class="main__about-me">
+            <h2>ABOUT ME</h2>
+            <ul >
+                <li>I'm accountant by profession who is changint his career</li>
+                <li>I've been working as accountant for twetnty years and in that work begain my love</li>
+                <li>So, while I was working as an accountan I buil programs with Excel VBA</li>
+                <li>Currently I'm studyng in Platzi</li>
+                
+            </ul>
+        </section>
+
+        <section class="main__skills">
             <h2>SKILLS</h2>
             <div class="skills-container">
                 <div class="skill">JavaScript</div>
@@ -145,7 +140,7 @@
             
         </section>
 
-        <section class="certifications">
+        <section class="main__certifications">
             <h2>CERTIFICATIONS</h2>
             <article class="certification">
                 <a href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">
@@ -206,7 +201,7 @@
             </article>
         </section>
         
-        <section id="contact" class="contact">
+        <section id="contact" class="main__contact">
             <h2>CONTACT</h2>
             <div class="contact-info">
                 <p><span>Email:</span>  sandrosimonore@gmail.com</p>
@@ -217,10 +212,10 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         
         <!-- Social media -->
-        <section class="social-media">
+        <section class="footer__social-media">
             <div class="icon-container">
                 
                 <a href="https://linkedin.com/in/sandrosimonore/" target="_blank" rel="noopener noreferrer">
