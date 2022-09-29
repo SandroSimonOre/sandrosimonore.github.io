@@ -100,6 +100,41 @@ ul {
 .header__social-media-container ul img {
   width: 1.5rem;
 }
+.header .language-toggle {
+  position: relative;
+}
+.header .language-toggle__flag-button {
+  background-image: url("../img/flag-en.svg");
+  background-size: cover;
+  width: 1.5rem;
+  height: 1rem;
+  border: none;
+}
+.header .language-toggle__menu {
+  position: absolute;
+  display: none;
+  background-color: white;
+  right: 0;
+  border: 1px solid gray;
+  width: 5rem;
+}
+.header .language-toggle__menu li {
+  line-height: 2rem;
+  font-size: 0.7rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 0.4rem;
+}
+.header .language-toggle__menu li:hover {
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+}
+.header .language-toggle__menu--visible {
+  display: block;
+}
 @media (max-width: 480px) {
   .header__logo-container {
     width: auto;

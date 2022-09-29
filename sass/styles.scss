@@ -132,6 +132,47 @@ $desktop: (min-width: 1024px);
         }
         
     }
+
+    .language-toggle {
+
+        position: relative;
+        
+        &__flag-button {
+            background-image: url('../img/flag-en.svg' );
+            background-size: cover;
+            width: 1.5rem;
+            height: 1rem;
+            border: none;
+        }
+
+        &__menu {
+            position: absolute;
+            display: none;
+            background-color: white;
+            right: 0;
+            border: 1px solid gray;
+            width: 5rem;
+
+            li {
+                
+                line-height: 2rem;
+                font-size: 0.7rem;
+                user-select: none;  
+                padding-left: 0.4rem;
+                &:hover {
+                    font-weight: bolder;
+                    color: white;
+                    background-color: black;
+                    
+                }
+            }
+        }
+
+        &__menu--visible {
+            display: block;
+        }
+        
+    }
     
     @media #{$smartphone} {
         
