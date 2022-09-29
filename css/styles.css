@@ -30,10 +30,11 @@ ul {
   box-shadow: 0 0 4px gray;
 }
 .header__logo-container {
-  width: 30%;
+  width: 25%;
 }
 .header__logo-container .logo {
   display: flex;
+  justify-content: center;
 }
 .header__logo-container .logo a {
   display: flex;
@@ -66,8 +67,9 @@ ul {
   font-size: 0.7rem;
 }
 .header__navbar-container {
-  width: 50%;
+  width: 45%;
   font-weight: bolder;
+  align-self: center;
 }
 .header__navbar-container nav ul {
   display: flex;
@@ -98,28 +100,43 @@ ul {
   width: 6rem;
 }
 .header__social-media-container ul img {
-  width: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 .header .language-toggle {
+  width: 3rem;
   position: relative;
+  display: flex;
+  justify-content: end;
 }
 .header .language-toggle__flag-button {
-  background-image: url("../img/flag-en.svg");
+  background-image: url("../img/flag-eng.svg");
   background-size: cover;
-  width: 1.5rem;
-  height: 1rem;
+  width: 1.7rem;
+  height: 1.3rem;
+  right: 0;
   border: none;
+}
+.header .language-toggle__flag-button:hover {
+  cursor: pointer;
+}
+.header .language-toggle__flag-button--eng {
+  background-image: url("../img/flag-eng.svg");
+}
+.header .language-toggle__flag-button--esp {
+  background-image: url("../img/flag-esp.svg");
 }
 .header .language-toggle__menu {
   position: absolute;
   display: none;
   background-color: white;
   right: 0;
-  border: 1px solid gray;
+  top: 1.2rem;
   width: 5rem;
 }
 .header .language-toggle__menu li {
   line-height: 2rem;
+  border: 1px solid gray;
   font-size: 0.7rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -131,6 +148,9 @@ ul {
   font-weight: bolder;
   color: white;
   background-color: black;
+}
+.header .language-toggle__menu :last-child {
+  border-top: none;
 }
 .header .language-toggle__menu--visible {
   display: block;
@@ -182,9 +202,9 @@ ul {
   text-align: center;
 }
 .main__hero .presentation h1 {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .main__hero .presentation p {
   width: 70%;
