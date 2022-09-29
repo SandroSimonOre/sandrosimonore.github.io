@@ -39,8 +39,8 @@
 
     "contact":{
         "section-title":"Contacto",
-        "email":"Correo electrónico:",
-        "cellphone":"Móvil:"
+        "email":"Email:",
+        "cellphone":"Cellphone:"
     }
     
 }

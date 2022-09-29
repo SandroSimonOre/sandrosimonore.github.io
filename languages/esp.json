@@ -6,7 +6,7 @@
         },
         "presentation": {
             "title":"Hola, <br> yo soy Sandro Simón",
-            "text":"Soy un full stack developer actualmente viviendo en Perú en busca de oportunidades para trabajar de forma remota."
+            "text":"Soy full stack developer actualmente viviendo en Perú en busca de oportunidades para trabajar de forma remota."
         },
         "portfolio": {
             "section-title":"Portfolio",
@@ -17,7 +17,7 @@
         },
         "about": {
             "section-title":"Sobre mí",
-            "content":"Soy contador de profesión, actualmente haciendo un cambio de carrera. Empecé a programar mientras trabajaba como contador, para solucionar los problemas de manejo de datos."
+            "content":"Soy contador de profesión, actualmente haciendo un cambio de carrera.\n Empecé a programar mientras trabajaba como contador, para solucionar los problemas de manejo de datos."
         },
 
         "skills": {
@@ -39,7 +39,7 @@
 
         "contact":{
             "section-title":"Contacto",
-            "email":"Correo electrónico:",
+            "email":"Email:",
             "cellphone":"Móvil:"
         }
         

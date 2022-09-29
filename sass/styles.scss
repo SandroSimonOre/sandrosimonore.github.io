@@ -37,12 +37,9 @@ $desktop: (min-width: 1024px);
     background-color: white;
     height: 5rem;
     box-shadow: 0 0 4px gray;
-
-    &__logo-container {
-        width: 25%;
-        
-        .logo {
-
+    
+    .logo {
+            width: 25%;
             display: flex;
             justify-content: center;
     
@@ -50,12 +47,12 @@ $desktop: (min-width: 1024px);
                 display: flex;
                 user-select: none;
 
-                .llave {
+                .braket {
                     font-size: 3rem;
                     color: black;
                 }
 
-                .texto {
+                .content {
                     
                     display: flex;
                     flex-direction: column;
@@ -81,58 +78,47 @@ $desktop: (min-width: 1024px);
                                             }
                 }
             }
-        }
-        
     }
-        
-    &__navbar-container {
+       
+    .navbar {
+
         width: 45%;
         font-weight: bolder;
         align-self: center;
-        nav {
-            
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-                text-transform: uppercase;
-    
-                li {
-                    letter-spacing: 1.5px;
-                    font-size: 14px;
-                    
-                    a {
-                        color: black;
-                    }
-
-                    :hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .close-menu {
-                    display: none;
-                }
-            }
-        }
-
-    }
         
-    &__social-media-container {
-        width: 8%;
-        display: flex;
-        justify-content: center;
-
         ul {
             display: flex;
-            justify-content: space-around;
-            width: 6rem;
-            
-            img {
-                width: 1.7rem;
-                height: 1.7rem;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+
+            li {
+                letter-spacing: 1.5px;
+                font-size: 14px;
+                
+                a {
+                    color: black;
+                }
+
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .close-menu {
+                display: none;
             }
         }
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        width: 6rem;
         
+        img {
+            width: 1.7rem;
+            height: 1.7rem;
+        }
     }
 
     .language-toggle {
@@ -201,17 +187,29 @@ $desktop: (min-width: 1024px);
     }
     
     @media #{$smartphone} {
+
+        .logo {
+            width: 70%;
+        }
         
-        &__logo-container {
+        .navbar {
             width: auto;
-        }
-
-        &__social-media-container {
             display: none;
         }
 
-        &__navbar-container {
+        .social-media {
             display: none;
+        }
+
+        .language-toggle {
+            &__menu {
+                width: 10rem;
+
+                li {
+                    line-height: 4rem;
+                    font-size: 1rem;
+                }
+            }
         }
         
     }
