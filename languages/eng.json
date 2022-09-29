@@ -1,8 +1,46 @@
-    {
-        "navbar": {
-            "about-me":"About me",
-            "portfolio":"Portfolio",
-            "contact-me":"Contact me"
-        }
-        
+{
+    "navbar": {
+        "about-me":"About me",
+        "portfolio":"Portfolio",
+        "contact-me":"Contact"
+    },
+    "presentation": {
+        "title":"Hola, <br> yo soy Sandro Simón",
+        "text":"Soy un full stack developer actualmente viviendo en Perú en busca de oportunidades para trabajar de forma remota."
+    },
+    "portfolio": {
+        "section-title":"Portfolio",
+        "button-live-version":"Versión online",
+        "button-goto-github":"Ver en GitHub",
+        "project-1-title":"Movies App",
+        "project-1-overview":"Este es mi primer proyecto. Está hecho en React.js y consiste en el consumo de una API."
+    },
+    "about": {
+        "section-title":"Sobre mí",
+        "content":"Soy contador de profesión, actualmente haciendo un cambio de carrera. Empecé a programar mientras trabajaba como contador, para solucionar los problemas de manejo de datos."
+    },
+
+    "skills": {
+        "section-title":"Habilidades"
+    },
+
+    "certifications": {
+        "section-title":"Certificaciones",
+        "certification-1-title":"Frontend con React.js",
+        "certification-1-overview": "Vimos JavaScript, React.js.",
+        "certification-1-goto-button":"Ver en Platzi",
+        "certification-2-title":"Full Stack Developer con JavaScript",
+        "certification-2-overview": "Vimos JavaScript, React.js. dsdsadasda",
+        "certification-2-goto-button":"Ver en Platzi",
+        "certification-3-title":"JavaScript Algorithms and Data Structures",
+        "certification-3-overview": "Vimos JavaScript, React.js.",
+        "certification-3-goto-button":"Ver en FreeCodeCamp"
+    },
+
+    "contact":{
+        "section-title":"Contacto",
+        "email":"Correo electrónico:",
+        "cellphone":"Móvil:"
     }
+    
+}

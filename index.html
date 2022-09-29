@@ -39,9 +39,9 @@
                         <img src="./img/button-close.svg" alt="">
                     </button>
     
-                    <li><a href="#about-me" data-section="navbar" data-value="about-me">About me</a></li>
-                    <li><a href="#portfolio" data-section="navbar" data-value="portfolio">Portfolio</a></li>
-                    <li><a href="#contact"  data-section="navbar" data-value="contact-me">Contact me</a></li>
+                    <li><a href="#about" data-section="navbar" data-value="about-me"></a></li>
+                    <li><a href="#portfolio" data-section="navbar" data-value="portfolio"></a></li>
+                    <li><a href="#contact"  data-section="navbar" data-value="contact-me"></a></li>
                     
                 </ul>
             </nav>
@@ -82,10 +82,10 @@
         <section class="main__hero">   
             
             <div class="presentation">
-                <h1>Hello, <br> I'm Sandro Simón</h1>
+                <h1 data-section="presentation" data-value="title">
+                </h1>
                 <br>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum commodi eaque quos tempora voluptate labore. Eaque, doloremque id, molestiae blanditiis odio ea eveniet itaque minima sapiente eligendi accusantium harum?
+                <p data-section="presentation" data-value="text">
                 </p>
             </div>
 
@@ -96,22 +96,24 @@
         </section>
 
         <section id="portfolio" class="main__portfolio">
-            <h2>PORTFOLIO</h2>
+            <h2 data-section="portfolio" data-value="section-title"></h2>
             <article class="project">
                 <div class="screenshot">
                     <img src="./img//portfolio-movies-app.jpg" alt="">
                 </div>
+
                 <div class="overview">
-                    <h4>MOVIES APP</h4>
+                    <h4 data-section="portfolio" data-value="project-1-title">
+                    </h4>
                     <br>
-                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
-                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
-                        Intersection Observer.
+                    <p data-section="portfolio" data-value="project-1-overview">
                     </p>
                     <br><br>
                     <div class="buttons-container">
-                        <a class="button" href="">Live version</a>
-                        <a class="button" href="">Go to Github</a>
+                        <a data-section="portfolio" data-value="button-live-version" class="button" href="">
+                        </a>
+                        <a data-section="portfolio" data-value="button-goto-github" class="button" href="">
+                        </a>
                     </div>
                     
                 </div>
@@ -119,19 +121,14 @@
             
         </section>
 
-        <section id='about-me' class="main__about-me">
-            <h2>ABOUT ME</h2>
-            <ul >
-                <li>I'm accountant by profession who is changint his career</li>
-                <li>I've been working as accountant for twetnty years and in that work begain my love</li>
-                <li>So, while I was working as an accountan I buil programs with Excel VBA</li>
-                <li>Currently I'm studyng in Platzi</li>
-                
-            </ul>
+        <section id='about' class="main__about-me">
+            <h2 data-section="about" data-value="section-title">ABOUT ME</h2>
+            <p data-section="about" data-value="content">    
+            </p>
         </section>
 
         <section class="main__skills">
-            <h2>SKILLS</h2>
+            <h2 data-section="skills" data-value="section-title"></h2>
             <div class="skills-container">
                 <div class="skill">JavaScript</div>
                 <div class="skill">Node.js</div>
@@ -150,7 +147,8 @@
         </section>
 
         <section class="main__certifications">
-            <h2>CERTIFICATIONS</h2>
+            <h2 data-section="certifications" data-value="section-title">
+            </h2>
             <article class="certification">
                 <a href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">
                     <div class="screenshot">
@@ -158,18 +156,19 @@
                     </div>
                 </a>
                 <div class="overview">
-                    <h4>FRONTEND CON REACT.JS</h4>
+                    <h4 data-section="certifications" data-value="certification-1-title">
+                    </h4>
                     <h5>(PLATZI)</h5>
                     <br>
-                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
-                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
-                        Intersection Observer.
+                    <p data-section="certifications" data-value="certification-1-overview">
                     </p>
                     <br><br>
-                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
+                    <a class="button"  data-section="certifications" data-value="certification-1-goto-button" href="https://platzi.com/p/sandrosimon/ruta/8-desarrollo-react/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                    </a>
 
                 </div>
             </article>
+
             <article class="certification">
                 <a href="https://platzi.com/p/sandrosimon/ruta/100-javascript-full-stack/diploma/detalle/" target="_blank" rel="noopener noreferrer">
                     <div class="screenshot">
@@ -177,18 +176,21 @@
                     </div>
                 </a>
                 <div class="overview">
-                    <h4>FULL STACK DEVELOPER CON JAVASCRIPT</h4>
-                    <h5>(PLATZI)</h5>
+                    <h4 data-section="certifications" data-value="certification-2-title">
+                    </h4>
+                    <h5 >
+                        (PLATZI)
+                    </h5>
                     <br>
-                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
-                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
-                        Intersection Observer.
+                    <p data-section="certifications" data-value="certification-2-overview">
                     </p>
                     <br><br>
-                    <a class="button" href="https://platzi.com/p/sandrosimon/ruta/100-javascript-full-stack/diploma/detalle/" target="_blank" rel="noopener noreferrer">See in Platzi</a>
+                    <a class="button" data-section="certifications" data-value="certification-2-goto-button" href="https://platzi.com/p/sandrosimon/ruta/100-javascript-full-stack/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                    </a>
 
                 </div>
             </article>
+
             <article class="certification">
                 <a href="https://www.freecodecamp.org/certification/sandrosimon/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
                     <div class="screenshot">
@@ -196,25 +198,24 @@
                     </div>
                 </a>
                 <div class="overview">
-                    <h4>JAVASCRIPT ALGORITHMS AND DATA STRUCTURES</h4>
+                    <h4 data-section="certifications" data-value="certification-3-title"></h4>
                     <h5>(FREECODECAMP)</h5>
                     <br>
-                    <p>This is my firs app. Trata sobre el consumo de la API The Movie DB
-                        Ha sido construida con React. Se emplearon tecnologías como Axios, 
-                        Intersection Observer.
+                    <p data-section="certifications" data-value="certification-3-overview">
                     </p>
                     <br><br>
-                    <a class="button" href="https://www.freecodecamp.org/certification/sandrosimon/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">See in FreeCodeCamp</a>
+                    <a data-section="certifications" data-value="certification-3-goto-button" class="button" href="https://www.freecodecamp.org/certification/sandrosimon/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+                    </a>
 
                 </div>
             </article>
         </section>
         
         <section id="contact" class="main__contact">
-            <h2>CONTACT</h2>
+            <h2 data-section="contact" data-value="section-title"></h2>
             <div class="contact-info">
-                <p><span>Email:</span>  sandrosimonore@gmail.com</p>
-                <p><span>Cellphone:</span>  +51 940 279 718</p>
+                <p><span data-section="contact" data-value="email"></span>  sandrosimonore@gmail.com</p>
+                <p><span data-section="contact" data-value="cellphone"></span>  +51 940 279 718</p>
             </div>
             
         </section>

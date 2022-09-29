@@ -35,7 +35,6 @@ $desktop: (min-width: 1024px);
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    
     height: 5rem;
     box-shadow: 0 0 4px gray;
 
@@ -46,6 +45,7 @@ $desktop: (min-width: 1024px);
 
             display: flex;
             justify-content: center;
+    
             a {
                 display: flex;
                 user-select: none;
@@ -136,12 +136,12 @@ $desktop: (min-width: 1024px);
     }
 
     .language-toggle {
+
         width: 3rem;
         position: relative;
         display: flex;
         justify-content: end;
-    
-        
+            
         &__flag-button {
             background-image: url('../img/flag-eng.svg' );
             background-size: cover;
@@ -334,8 +334,8 @@ $desktop: (min-width: 1024px);
                 align-items: center;
                 width: 50%;
                 
-                h3 {    
-                  line-height: 4rem;  
+                h4 {    
+                  text-transform: uppercase;  
                 }
                 
                 p {
@@ -389,10 +389,10 @@ $desktop: (min-width: 1024px);
             text-align: center;
         }
         
-        ul {
+        p {
             margin-top: 2rem;
             padding-left: 2rem;
-            line-height: 2rem;
+            line-height: 1.5rem;
         }
 
         @media #{$smartphone} {
@@ -409,6 +409,7 @@ $desktop: (min-width: 1024px);
         padding-top: 7rem;
         
         .skills-container {
+
             width: 70%;
             padding-top: 3rem;
             display: grid;
@@ -467,10 +468,6 @@ $desktop: (min-width: 1024px);
                 align-items: center;
                 width: 50%;
                 
-                h3 {    
-                  line-height: 4rem;  
-                }
-
                 p {
                     line-height: 1.5rem;
                 }

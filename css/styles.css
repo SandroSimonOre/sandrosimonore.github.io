@@ -19,6 +19,10 @@ ul {
   list-style: none;
 }
 
+h2, h4 {
+  text-transform: uppercase;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -262,8 +266,8 @@ ul {
   align-items: center;
   width: 50%;
 }
-.main__portfolio .project .overview h3 {
-  line-height: 4rem;
+.main__portfolio .project .overview h4 {
+  text-transform: uppercase;
 }
 .main__portfolio .project .overview p {
   line-height: 1.5rem;
@@ -313,10 +317,10 @@ ul {
 .main__about-me h2 {
   text-align: center;
 }
-.main__about-me ul {
+.main__about-me p {
   margin-top: 2rem;
   padding-left: 2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 @media (max-width: 480px) {
   .main__about-me {
@@ -393,9 +397,6 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 50%;
-}
-.main__certifications .certification .overview h3 {
-  line-height: 4rem;
 }
 .main__certifications .certification .overview p {
   line-height: 1.5rem;
