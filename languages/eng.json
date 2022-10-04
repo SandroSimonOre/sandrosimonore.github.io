@@ -11,7 +11,7 @@
     "portfolio": {
         "section-title":"Portfolio",
         "button-live-version":"Online version",
-        "button-goto-github":"Go to GitHub",
+        "button-goto-github":"View on GitHub",
         "project-1-title":"movies browser",
         "project-1-overview":"Project built with React.js based on the consumption of <a href='https://developers.themoviedb.org/3/getting-started/introduction' target='_blank'> The Movie DB API<a/>. It allows the user to search for movies and save them as Favorites in the local browser. Grid, Flexbox, Context API, Infinite scroll, Axios are some of the features implemented.",
         "project-2-title":"personal website",
