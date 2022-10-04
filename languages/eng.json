@@ -5,40 +5,45 @@
         "contact-me":"Contact"
     },
     "presentation": {
-        "title":"Hola, <br> yo soy Sandro Simón",
-        "text":"Soy un full stack developer actualmente viviendo en Perú en busca de oportunidades para trabajar de forma remota."
+        "title":"Hello, <br> I'm Sandro Simón,",
+        "text":"a self-taught Full Stack Developer currently living in Perú looking for an opportunity to work remotely in the technology industry. I love developing with the JavaScript ecosystem: React.js, Node.js, Express, and relational databases like PostgreSQL and MySQL."
     },
     "portfolio": {
         "section-title":"Portfolio",
-        "button-live-version":"Versión online",
-        "button-goto-github":"Ver en GitHub",
-        "project-1-title":"Movies App",
-        "project-1-overview":"Este es mi primer proyecto. Está hecho en React.js y consiste en el consumo de una API."
+        "button-live-version":"Online version",
+        "button-goto-github":"Go to GitHub",
+        "project-1-title":"movies browser",
+        "project-1-overview":"Project built with React.js based on the consumption of <a href='https://developers.themoviedb.org/3/getting-started/introduction' target='_blank'> The Movie DB API<a/>. It allows the user to search for movies and save them as Favorites in the local browser. Grid, Flexbox, Context API, Infinite scroll, Axios are some of the features implemented.",
+        "project-2-title":"personal website",
+        "project-2-overview":"It is precisely the web in which you are now. It has been built with HTML, Sass and Javascript. Media queries were used to make it possible to view it on a SmartPhone. The website is also available in Spanish."
     },
     "about": {
-        "section-title":"Sobre mí",
-        "content":"Soy contador de profesión, actualmente haciendo un cambio de carrera. Empecé a programar mientras trabajaba como contador, para solucionar los problemas de manejo de datos."
+        "section-title":"About me",
+        "paragraph1":"I am an accountant by profession, currently making a career change. My passion for programming began while I was working as an accountant. I had to deal with a lot of information and doing it manually was really complicated.",
+        "paragraph2": "So after doing some research, I discovered that Excel included a feature called Visual Basic for Applications that allowed me to automate those repetitive tasks, save time and eliminate errors associated with manual work. Later I learned about databases and I started using MariaDB (a MySQL fork) to handle large amounts of data.",
+        "paragraph3":  "At the beginning of this year 2022, I learned about the opportunities to work remotely in technology for foreign companies and it was then that I began an intensive process of preparing myself in technologies for web development.",
+        "paragraph4": "I have prepared myself with platforms like Platzi, Udemy, FreeCodeCamp, Open Bootcamp, among others."
     },
 
     "skills": {
-        "section-title":"Habilidades"
+        "section-title":"skills"
     },
 
     "certifications": {
-        "section-title":"Certificaciones",
-        "certification-1-title":"Frontend con React.js",
-        "certification-1-overview": "Vimos JavaScript, React.js.",
-        "certification-1-goto-button":"Ver en Platzi",
-        "certification-2-title":"Full Stack Developer con JavaScript",
-        "certification-2-overview": "Vimos JavaScript, React.js. dsdsadasda",
-        "certification-2-goto-button":"Ver en Platzi",
+        "section-title":"Certifications",
+        "certification-1-title":"Frontend with React.js",
+        "certification-1-overview": "Some of the courses taken include CSS, Sass, JavaScript, React.js and Next.js",
+        "certification-1-goto-button":"View on Platzi",
+        "certification-2-title":"Full Stack Developer with JavaScript",
+        "certification-2-overview": "Some of the courses taken include Node.js, Nest, Express, TypeScript, PostgreSQL, MySQL, MongoDB and JWT Authentication.",
+        "certification-2-goto-button":"View on Platzi",
         "certification-3-title":"JavaScript Algorithms and Data Structures",
-        "certification-3-overview": "Vimos JavaScript, React.js.",
-        "certification-3-goto-button":"Ver en FreeCodeCamp"
+        "certification-3-overview": "It was an interactive course in which challenges were solved as some programming concepts such as arrays, objects, regular expressions, object-oriented programming, functional programming, among others; were explained.",
+        "certification-3-goto-button":"View on FreeCodeCamp"
     },
 
     "contact":{
-        "section-title":"Contacto",
+        "section-title":"Contact",
         "email":"Email:",
         "cellphone":"Cellphone:"
     }

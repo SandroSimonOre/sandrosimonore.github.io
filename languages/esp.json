@@ -6,7 +6,7 @@
         },
         "presentation": {
             "title":"Hola, <br> yo soy Sandro Simón,",
-            "text":"un full stack developer actualmente viviendo en Perú en busca de una oportunidad para trabajar en el sector de tecnología de forma remota. Me encanta trabajar con el ecosistema de JavaScript: React.js, Node.js, Express y con bases de datos relacionales como son PostgreSQL y MySQL."
+            "text":"un Full Stack Developer autodidacta actualmente viviendo en Perú en busca de una oportunidad para trabajar en el sector de tecnología de forma remota. Me encanta desarrollar con el ecosistema de JavaScript: React.js, Node.js, Express y con bases de datos relacionales como PostgreSQL y MySQL."
         },
         "portfolio": {
             "section-title":"Portfolio",
@@ -20,13 +20,13 @@
         "about": {
             "section-title":"Sobre mí",
             "paragraph1":"Soy contador de profesión, actualmente haciendo un cambio de carrera. Mi pasión por la programación nació mientras trabajaba como contador. Tenía que lidiar con bastante información y hacerlo de forma manual era realmente complicado.",
-            "paragraph2": "Así que luego de investigar un poco, descubrí que Excel incluía una característica llamada Visual Basic for Applications con la cual me fue posible automatizar las tareas que eran repetitivas. Más adelante aprendí sobre bases de datos y empecé a usar MariaDB para manejar grandes cantidades de datos.",
-            "paragraph3":  "A inicios de este año 2022, supe acerca de las oportunidades de trabajar en tecnología para empresas del exterior de forma remota y empecé a dedicar gran parte de mi tiempo a estudiar sobre desarrollo web.",
-            "paragraph4": "He aprendido desarrollo web con plataformas como Platzi, Udemy, FreeCodeCamp, Open Bootcamp, entre otras."
+            "paragraph2": "Así que luego de investigar un poco, descubrí que Excel incluía una característica llamada Visual Basic for Applications que me permitió automatizar aquellas tareas repetitivas, ahorrar tiempo y eliminar errores propios del trabajo manual. Más adelante aprendí sobre bases de datos y empecé a usar MariaDB (fork de MySQL) para manejar grandes cantidades de datos.",
+            "paragraph3":  "A inicios de este año 2022, supe acerca de las oportunidades de trabajar en tecnología para empresas del exterior de forma remota y fue entonces que inicie un proceso intensivo de preparación en tecnologías para el desarrollo web.",
+            "paragraph4": "Me he preparado con plataformas como Platzi, Udemy, FreeCodeCamp, Open Bootcamp, entre otras."
         },
 
         "skills": {
-            "section-title":"Habilidades"
+            "section-title":"skills"
         },
 
         "certifications": {
