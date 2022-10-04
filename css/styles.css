@@ -23,6 +23,10 @@ h2, h4 {
   text-transform: uppercase;
 }
 
+p {
+  text-align: justify;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -314,13 +318,13 @@ h2, h4 {
 .main__about {
   margin-top: 7rem;
   width: 75%;
+  padding: 0 1.5rem 0 1.5rem;
 }
 .main__about h2 {
   text-align: center;
 }
 .main__about p {
   margin-top: 2rem;
-  padding-left: 2rem;
   line-height: 1.5rem;
 }
 @media (max-width: 480px) {

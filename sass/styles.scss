@@ -16,8 +16,8 @@
 }
 
 $smartphone: '(max-width: 480px)';
-$tablet: (min-width: 480px) and (max-width: 728px);
-$desktop: (min-width: 1024px);
+// $tablet: (min-width: 480px) and (max-width: 728px);
+// $desktop: (min-width: 1024px);
 
 .header {
 
@@ -257,6 +257,7 @@ $desktop: (min-width: 1024px);
                 width: 70%;
                 line-height: 2rem;
                 font-size: 1.3rem;
+                
             }
         
             @media #{$smartphone} {
@@ -374,14 +375,13 @@ $desktop: (min-width: 1024px);
         
         margin-top: 7rem;
         width: 75%;
-        
+        padding: 0 1.5rem 0 1.5rem;
         h2 {
             text-align: center;
         }
         
         p {
             margin-top: 2rem;
-            padding-left: 2rem;
             line-height: 1.5rem;
         }
 
