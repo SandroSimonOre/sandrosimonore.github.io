@@ -5,19 +5,24 @@
             "contact-me":"Contacto"
         },
         "presentation": {
-            "title":"Hola, <br> yo soy Sandro Simón",
-            "text":"Soy full stack developer actualmente viviendo en Perú en busca de oportunidades para trabajar de forma remota."
+            "title":"Hola, <br> yo soy Sandro Simón,",
+            "text":"un full stack developer actualmente viviendo en Perú en busca de una oportunidad para trabajar en el sector de tecnología de forma remota. Me encanta trabajar con el ecosistema de JavaScript: React.js, Node.js, Express y con bases de datos relacionales como son PostgreSQL y MySQL."
         },
         "portfolio": {
             "section-title":"Portfolio",
             "button-live-version":"Versión online",
             "button-goto-github":"Ver en GitHub",
-            "project-1-title":"Movies App",
-            "project-1-overview":"Este es mi primer proyecto. Está hecho en React.js y consiste en el consumo de una API."
+            "project-1-title":"buscador de películas",
+            "project-1-overview":"Proyecto desarrollado en React.js basado en el consumo de la <a href='https://developers.themoviedb.org/3/getting-started/introduction' target='_blank'> API de The Movie DB <a/>. Permite al usuario buscar películas y guardarlas como Favoritos en el navegador local. Grid, Flexbox, Context API, Infinite scroll, Axios son algunas de las características implementadas.",
+            "project-2-title":"sitio web personal",
+            "project-2-overview":"Es precisamente la web en la que estás ahora. Ha sido construida con HTML, Sass y Javascript. Se usaron media queries para hacer posible su visualización en un SmartPhone. La web también está disponible en Inglés."
         },
         "about": {
             "section-title":"Sobre mí",
-            "content":"Soy contador de profesión, actualmente haciendo un cambio de carrera.\n Empecé a programar mientras trabajaba como contador, para solucionar los problemas de manejo de datos."
+            "paragraph1":"Soy contador de profesión, actualmente haciendo un cambio de carrera. Mi pasión por la programación nació mientras trabajaba como contador. Tenía que lidiar con bastante información y hacerlo de forma manual era realmente complicado.",
+            "paragraph2": "Así que luego de investigar un poco, descubrí que Excel incluía una característica llamada Visual Basic for Applications con la cual me fue posible automatizar las tareas que eran repetitivas. Más adelante aprendí sobre bases de datos y empecé a usar MariaDB para manejar grandes cantidades de datos.",
+            "paragraph3":  "A inicios de este año 2022, supe acerca de las oportunidades de trabajar en tecnología para empresas del exterior de forma remota y empecé a dedicar gran parte de mi tiempo a estudiar sobre desarrollo web.",
+            "paragraph4": "He aprendido desarrollo web con plataformas como Platzi, Udemy, FreeCodeCamp, Open Bootcamp, entre otras."
         },
 
         "skills": {
@@ -27,13 +32,13 @@
         "certifications": {
             "section-title":"Certificaciones",
             "certification-1-title":"Frontend con React.js",
-            "certification-1-overview": "Vimos JavaScript, React.js.",
+            "certification-1-overview": "Entre los cursos tomados están CSS, Sass, JavaScript, React.js, Next.js",
             "certification-1-goto-button":"Ver en Platzi",
             "certification-2-title":"Full Stack Developer con JavaScript",
-            "certification-2-overview": "Vimos JavaScript, React.js. dsdsadasda",
+            "certification-2-overview": "Entre los cursos tomados están Node.js, Nest, Express, TypeScript, PostgreSQL, MySQL, MongoDB y JWT Authentication.",
             "certification-2-goto-button":"Ver en Platzi",
             "certification-3-title":"JavaScript Algorithms and Data Structures",
-            "certification-3-overview": "Vimos JavaScript, React.js.",
+            "certification-3-overview": "Fue un curso interactivo en el cual se iban resolviendo retos a medida que se desarrollaban conceptos de programación tales como: arreglos, objetos, expresiones regulares, programación orientada a objetos, programación funcional, entre otros.",
             "certification-3-goto-button":"Ver en FreeCodeCamp"
         },
 

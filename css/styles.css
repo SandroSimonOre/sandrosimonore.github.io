@@ -311,20 +311,20 @@ h2, h4 {
     justify-content: space-around;
   }
 }
-.main__about-me {
+.main__about {
   margin-top: 7rem;
   width: 75%;
 }
-.main__about-me h2 {
+.main__about h2 {
   text-align: center;
 }
-.main__about-me p {
+.main__about p {
   margin-top: 2rem;
   padding-left: 2rem;
   line-height: 1.5rem;
 }
 @media (max-width: 480px) {
-  .main__about-me {
+  .main__about {
     width: 90%;
   }
 }

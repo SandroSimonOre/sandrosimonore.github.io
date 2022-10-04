@@ -15,14 +15,6 @@
     }
 }
 
-@mixin flex-section($class-name, $width ) {
-    
-    .#{$class-name} {
-        margin-top: 5rem;
-        width: #{$width};
-    }
-}
-
 $smartphone: '(max-width: 480px)';
 $tablet: (min-width: 480px) and (max-width: 728px);
 $desktop: (min-width: 1024px);
@@ -378,7 +370,7 @@ $desktop: (min-width: 1024px);
         }
     }
 
-    &__about-me {
+    &__about {
         
         margin-top: 7rem;
         width: 75%;
