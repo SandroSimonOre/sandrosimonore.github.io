@@ -333,6 +333,11 @@ $smartphone: '(max-width: 480px)';
                     line-height: 1.5rem;
                 }
 
+                span {
+                    align-self: flex-start;
+                    font-weight: bold;
+                }
+
                 .buttons-container {
                     
                     @include button('button', green, white, 8, 2, 2);

@@ -12,10 +12,16 @@
             "section-title":"Portfolio",
             "button-live-version":"Versión online",
             "button-goto-github":"Ver en GitHub",
-            "project-1-title":"buscador de películas",
-            "project-1-overview":"Proyecto desarrollado en React.js basado en el consumo de la <a href='https://developers.themoviedb.org/3/getting-started/introduction' target='_blank'> API de The Movie DB <a/>. Permite al usuario buscar películas y guardarlas como Favoritos en el navegador local. Grid, Flexbox, Context API, Infinite scroll, Axios son algunas de las características implementadas.",
-            "project-2-title":"sitio web personal",
-            "project-2-overview":"Es precisamente la web en la que estás ahora. Ha sido construida con HTML, Sass y Javascript. Se usaron media queries para hacer posible su visualización en un SmartPhone. La web también está disponible en Inglés."
+            "technologies-title":"Tecnologías:",
+
+            "project-2-title":"store api",
+            "project-2-overview":"Una aplicación que permite al usuario crear, modificar, consultar, y  eliminar entidades tales como productos, clientes, y pedidos. El acceso a cada endpoint es según el rol del usuario. Por ejemplo, usuarios con el rol guest sólo pueden consultar información. La base de datos se encuentra alojada en Amazon Web Services.",
+            "project-2-technologies-content":"Node.js, Express, PostgreSQL, Sequelize, Swagger, Jason Web Tokens, Git, Docker, Insomnia, PM2, Linux Ubuntu, Amazon EC2 y RDS.",
+        
+            "project-1-title":"movies browser",
+            "project-1-overview":"Una aplicación que permite a los usuarios buscar películas y guardarlas como favoritas en su navegador local. Hace consumo de la API de The Movie DB. Gestión de estados con Context API y Scroll infinito fueron implementados en este proyecto.",
+            "project-1-technologies-content":"React.js, Sass, React Router DOM, Axios, Context API, FlexBox, Grid."
+
         },
         "about": {
             "section-title":"Sobre mí",

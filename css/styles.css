@@ -277,6 +277,10 @@ p {
 .main__portfolio .project .overview p {
   line-height: 1.5rem;
 }
+.main__portfolio .project .overview span {
+  align-self: flex-start;
+  font-weight: bold;
+}
 .main__portfolio .project .overview .buttons-container .button {
   display: inline-block;
   background-color: green;
