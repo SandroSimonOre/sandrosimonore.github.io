@@ -15,7 +15,7 @@
         "technologies-title":"Technologies:",
 
         "project-2-title":"store api",
-        "project-2-overview":"An application that allows the user to create, modify, query, and delete entities such as products, customers, and orders. Access to the endpoints is according to the user's role. Users with guest role, for example, can only view information. The database is hosted in Amazon Web Services.",
+        "project-2-overview":"An application that allows the user to create, modify, query and delete entities such as products, customers, and orders. Access to the endpoints is according to the user's role. Users with guest role, for example, can only view information. The database is hosted in Amazon Web Services.",
         "project-2-technologies-content":"Node.js, Express, PostgreSQL, Sequelize, Swagger, Jason Web Tokens, Git, Docker, Insomnia, PM2, Linux Ubuntu, Amazon EC2 and RDS.",
         
         "project-1-title":"movies browser",

@@ -15,7 +15,7 @@
             "technologies-title":"Tecnologías:",
 
             "project-2-title":"store api",
-            "project-2-overview":"Una aplicación que permite al usuario crear, modificar, consultar, y  eliminar entidades tales como productos, clientes, y pedidos. El acceso a cada endpoint es según el rol del usuario. Por ejemplo, usuarios con el rol guest sólo pueden consultar información. La base de datos se encuentra alojada en Amazon Web Services.",
+            "project-2-overview":"Una aplicación que permite al usuario crear, modificar, consultar y  eliminar entidades tales como productos, clientes, y pedidos. El acceso a cada endpoint es según el rol del usuario. Por ejemplo, usuarios con el rol guest sólo pueden consultar información. La base de datos se encuentra alojada en Amazon Web Services.",
             "project-2-technologies-content":"Node.js, Express, PostgreSQL, Sequelize, Swagger, Jason Web Tokens, Git, Docker, Insomnia, PM2, Linux Ubuntu, Amazon EC2 y RDS.",
         
             "project-1-title":"movies browser",
