@@ -36,8 +36,21 @@ const loadLanguage = async language => {
 }
 
 (()=> {
+
+    let language = localStorage.getItem('language');
     
-    const language = localStorage.getItem('language') || 'eng';
+    if (!language) {
+        
+        if (window.navigator.language.substring(0, 3) === 'es-') {
+            language = 'esp';
+        } else if (window.navigator.language.substring(0, 3) === 'en-') {
+            language = 'eng';
+        } else {
+            language = 'eng';
+        }
+        
+    }
+    
     flagButton.classList.add(`language-toggle__flag-button--${language}`);
     loadLanguage(language);
     
