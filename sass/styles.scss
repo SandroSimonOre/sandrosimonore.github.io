@@ -412,19 +412,39 @@ $smartphone: '(max-width: 480px)';
             justify-content: center;
             align-items: center;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
+            gap: 2rem;
 
-            @include button('skill', black, white, 8, 2, 2);
-            .skill {margin: auto;}
+            .skill-card {
+                display: flex;
+                flex-direction: column;
+                height: 8rem;
+                width: 8rem;
+                justify-content: space-between;
+                align-items: center;
+                border: 0.1px solid gray;
+                border-radius: 20px;
+                padding: 1rem 0;
+                font-size: 0.8rem;
+                img {
+                    width: auto;
+                    height: 4rem;
+                }
+
+            }
         }
 
         @media #{$smartphone} {
             .skills-container {
                 width: 100%;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
 
-                .skill {
-                    width: 100%;
+                .skill-card {
+                    //background-color: red;
+                    width: 6rem;
+                    height: 6rem;
+                    img {
+                        height: 2rem;
+                    }
                 }
             }
         }

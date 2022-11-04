@@ -351,32 +351,35 @@ p {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
-.main__skills .skills-container .skill {
-  display: inline-block;
-  background-color: black;
-  color: white;
+.main__skills .skills-container .skill-card {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
   width: 8rem;
-  height: 2rem;
-  line-height: 2rem;
-  border-radius: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1px solid gray;
+  border-radius: 20px;
+  padding: 1rem 0;
+  font-size: 0.8rem;
 }
-.main__skills .skills-container .skill {
-  margin: auto;
+.main__skills .skills-container .skill-card img {
+  width: auto;
+  height: 4rem;
 }
 @media (max-width: 480px) {
   .main__skills .skills-container {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  .main__skills .skills-container .skill {
-    width: 100%;
+  .main__skills .skills-container .skill-card {
+    width: 6rem;
+    height: 6rem;
+  }
+  .main__skills .skills-container .skill-card img {
+    height: 2rem;
   }
 }
 .main__certifications {
