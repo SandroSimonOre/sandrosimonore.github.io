@@ -291,8 +291,32 @@
         
         <section id="contact" class="main__contact">
             <h2 data-section="contact" data-value="section-title"></h2>
+            
             <div class="contact-info">
-                <p><span data-section="contact" data-value="email"></span> hello@sandrosimon.com</p>
+                <p data-section="contact" data-value="send-email"></p>
+                <p class="email">📧 hello@sandrosimon.com</p>
+            </div>
+            
+            <div class="contact-form">
+                <p data-section="contact" data-value="send-form"></p>
+
+                <form id="form" name="form" accept-charset="utf-8" action="https://formspree.io/f/xpznogqq" method="post">
+                    <p>
+                        <label data-section="contact" data-value="text-name-title"></label>
+                        <input type="text" name="name" placeholder="Your name">
+                    </p>
+                    <p>
+                        <label data-section="contact" data-value="text-email-title"></label>
+                        <input type="email" name="email" placeholder="Your email">
+                    </p>
+                
+                    <p>
+                        <label data-section="contact" data-value="text-message-title"></label> 
+                        <textarea name="message" rows="6" placeholder="Write your message here"></textarea>
+                    </p>
+                    <button data-section="contact" data-value="send-button-title"></button>
+                    
+                </form>
             </div>
             
         </section>

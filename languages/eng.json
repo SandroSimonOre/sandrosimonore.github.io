@@ -9,7 +9,7 @@
         "text":"a self-taught Full Stack Developer currently living in Perú looking for an opportunity to work remotely in the technology industry. I love developing with the JavaScript ecosystem: React.js, Node.js, Express, and with relational databases like PostgreSQL and MySQL."
     },
     "portfolio": {
-        "section-title":"Portfolio",
+        "section-title":"Projects",
         "button-live-version":"Online version",
         "button-goto-github":"View on GitHub",
         "technologies-title":"Technologies:",
@@ -27,7 +27,7 @@
         "section-title":"About me",
         "paragraph1":"I am an accountant by profession, currently making a career change. My passion for programming began while I was working as an accountant. I had to deal with a lot of information and doing it manually was really complicated.",
         "paragraph2": "So after doing some research, I discovered that Excel included a feature called Visual Basic for Applications that allowed me to automate those repetitive tasks, save time and eliminate errors associated with manual work. Later I learned about databases and I started using MariaDB (a MySQL fork) to handle large amounts of data.",
-        "paragraph3":  "At the beginning of this year 2022, I learned about the opportunities to work remotely in technology for foreign companies and it was then that I began an intensive process of preparing myself in technologies for web development.",
+        "paragraph3":  "At the beginning of the year 2022, I learned about the opportunities to work remotely in technology for foreign companies and it was then that I began an intensive process of preparing myself in technologies for web development.",
         "paragraph4": "I have prepared myself with platforms like Platzi, Udemy, FreeCodeCamp, Open Bootcamp, among others."
     },
 
@@ -50,8 +50,12 @@
 
     "contact":{
         "section-title":"Contact",
-        "email":"Email:",
-        "cellphone":"Cellphone:"
+        "send-email":"You can send me a message to this email:",
+        "send-form":"Or if you prefer, fill out and send this form:",
+        "text-name-title":"Name",
+        "text-email-title":"Email",
+        "text-message-title":"Message",
+        "send-button-title":"Send now"
     }
     
 }
