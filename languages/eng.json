@@ -40,12 +40,18 @@
         "certification-1-title":"Frontend with React.js",
         "certification-1-overview": "Some of the courses taken include CSS, Sass, JavaScript, React.js and Next.js",
         "certification-1-goto-button":"View on Platzi",
+
         "certification-2-title":"Full Stack Developer with JavaScript",
         "certification-2-overview": "Some of the courses taken include Node.js, Nest, Express, TypeScript, PostgreSQL, MySQL, MongoDB and JWT Authentication.",
         "certification-2-goto-button":"View on Platzi",
-        "certification-3-title":"JavaScript Algorithms and Data Structures",
-        "certification-3-overview": "It was an interactive course in which challenges were solved as some programming concepts such as arrays, objects, regular expressions, object-oriented programming, functional programming, among others; were explained.",
-        "certification-3-goto-button":"View on FreeCodeCamp"
+        
+        "certification-3-title":"AWS Cloud Practitioner",
+        "certification-3-overview": "With an approximate duration of <strong>08 hours</strong>, it has been an introductory course in which I have known those services that I will surely use in my career as developer. Among them I can highlight EC2 (Amazon Elastic Compute Cloud) and RDS (Amazon Relational Database Service).",
+        "certification-3-goto-button":"View on Platzi",
+        
+        "certification-4-title":"JavaScript Algorithms and Data Structures",
+        "certification-4-overview": "It was an interactive course in which challenges were solved as some programming concepts such as arrays, objects, regular expressions, object-oriented programming, functional programming, among others; were explained.",
+        "certification-4-goto-button":"View on FreeCodeCamp"
     },
 
     "contact":{
