@@ -72,6 +72,6 @@ async function handleSubmit( e ) {
     if (response.ok) {
 
         this.reset();
-        alert('Thanks for contact me')
+        
     }
 }
