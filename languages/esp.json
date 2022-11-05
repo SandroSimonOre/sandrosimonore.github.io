@@ -55,7 +55,8 @@
             "text-name-title":"Nombre",
             "text-email-title":"Correo",
             "text-message-title":"Mensaje",
-            "send-button-title":"Enviar ahora"
+            "send-button-title":"Enviar ahora",
+            "message-sent":"Mensaje enviado con éxito."
         }
         
     }

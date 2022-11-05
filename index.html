@@ -303,16 +303,16 @@
                 <form id="form" name="form" accept-charset="utf-8" action="https://formspree.io/f/xpznogqq" method="post">
                     <p>
                         <label data-section="contact" data-value="text-name-title"></label>
-                        <input type="text" name="name" placeholder="Your name">
+                        <input type="text" name="name" placeholder="Your name" required>
                     </p>
                     <p>
                         <label data-section="contact" data-value="text-email-title"></label>
-                        <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="email" placeholder="Your email" required>
                     </p>
                 
                     <p>
                         <label data-section="contact" data-value="text-message-title"></label> 
-                        <textarea name="message" rows="6" placeholder="Write your message here"></textarea>
+                        <textarea name="message" rows="6" placeholder="Write your message here" required></textarea>
                     </p>
                     <button data-section="contact" data-value="send-button-title"></button>
                     
@@ -354,6 +354,11 @@
         </section>
 
     </footer>
+
+    <div id="notification" class="notification">
+        <p data-section="contact" data-value="message-sent"></p>
+        
+    </div>
 
 </body>
 </html>

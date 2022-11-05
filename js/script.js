@@ -55,23 +55,32 @@ const loadLanguage = async language => {
     loadLanguage(language);
     
 })();
-
+const buttonNotify = document.getElementById('temp');
+const notification = document.getElementById('notification');
 const $form = document.querySelector('#form');
 $form.addEventListener('submit', handleSubmit);
 
+
+
 async function handleSubmit( e ) {
+    
     e.preventDefault();
+    
     const form = new FormData(this);
     const response = await fetch(this.action, {
         method: this.method,
         body: form,
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    if (response.ok) {
+        headers: { 'Accept': 'application/json' }
+    });
 
-        this.reset();
+    if (response.ok) { 
+    
+        notification.classList.add('visible');
+
+        setTimeout(() => {
+            notification.classList.remove('visible')
+        }, 2000);
         
+        this.reset();
     }
 }

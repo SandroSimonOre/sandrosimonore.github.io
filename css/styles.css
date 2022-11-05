@@ -284,7 +284,7 @@ p {
 }
 .main__portfolio .project .overview .buttons-container .button {
   display: inline-block;
-  background-color: green;
+  background-color: orange;
   color: white;
   width: 8rem;
   height: 2rem;
@@ -416,7 +416,7 @@ p {
 }
 .main__certifications .certification .overview .button {
   display: inline-block;
-  background-color: green;
+  background-color: orange;
   color: white;
   width: 12rem;
   height: 2rem;
@@ -491,7 +491,7 @@ p {
   border: none;
   margin-top: 1.5rem;
   padding: 1rem 0;
-  background-color: green;
+  background-color: orange;
   color: white;
   font-size: 1rem;
   width: 80%;
@@ -551,5 +551,42 @@ p {
 @media (max-width: 480px) {
   .footer__social-media {
     width: 70%;
+  }
+}
+
+.notification {
+  border-radius: 5px;
+  position: fixed;
+  width: 20rem;
+  height: 4rem;
+  margin-left: -10rem;
+  top: -4rem;
+  left: 50%;
+  color: white;
+  font-weight: bolder;
+  background-color: green;
+}
+
+.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: notification;
+          animation-name: notification;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: cubic-bezier(0, 1.06, 0.8, 0.98);
+          animation-timing-function: cubic-bezier(0, 1.06, 0.8, 0.98);
+}
+@-webkit-keyframes notification {
+  100% {
+    transform: translateY(5rem);
+  }
+}
+@keyframes notification {
+  100% {
+    transform: translateY(5rem);
   }
 }/*# sourceMappingURL=styles.css.map */

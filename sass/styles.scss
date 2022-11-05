@@ -60,7 +60,7 @@ $smartphone: '(max-width: 480px)';
                         font-family: 'Courier New', Courier, monospace;
 
                     }
-                   
+                
                     .position {
 
                         text-transform: uppercase;
@@ -72,7 +72,7 @@ $smartphone: '(max-width: 480px)';
                 }
             }
     }
-       
+    
     .navbar {
 
         width: 45%;
@@ -235,7 +235,7 @@ $smartphone: '(max-width: 480px)';
 
             @media #{$smartphone} {
                 width: 100%;     
-             }
+            }
             
         }
 
@@ -273,20 +273,20 @@ $smartphone: '(max-width: 480px)';
                 p {
                     width: 90%;
                 }
-             
+            
             }
-      
+    
         }
     
         @media #{$smartphone} {
-           flex-direction:column-reverse; 
-           margin-top: 3rem;
-           
-           .presentation {
+        flex-direction:column-reverse; 
+        margin-top: 3rem;
+        
+        .presentation {
             h1 {
                 font-size: 2.5rem;
             }
-           }
+        }
         }
 
     }
@@ -327,7 +327,7 @@ $smartphone: '(max-width: 480px)';
                 width: 50%;
                 
                 h4 {    
-                  text-transform: uppercase;  
+                text-transform: uppercase;  
                 }
                 
                 p {
@@ -341,7 +341,7 @@ $smartphone: '(max-width: 480px)';
 
                 .buttons-container {
                     
-                    @include button('button', green, white, 8, 2, 2);
+                    @include button('button', orange, white, 8, 2, 2);
                     
                 }
             }
@@ -488,7 +488,7 @@ $smartphone: '(max-width: 480px)';
                     line-height: 1.5rem;
                 }
 
-                @include button('button', green, white, 12, 2, 2);
+                @include button('button', orange, white, 12, 2, 2);
                 
             }
         }
@@ -523,11 +523,10 @@ $smartphone: '(max-width: 480px)';
         }
 
         .contact-info {
-            //border: 1px solid red;
+            
             width: 60%;
             margin-top: 2rem;
             line-height: 2rem;
-            //display: flex;
             justify-content: space-between;
         
             .email {
@@ -538,7 +537,7 @@ $smartphone: '(max-width: 480px)';
         }
 
         .contact-form {
-            //border: 1px solid red;
+            
             width: 60%;
             margin: 3rem 0;
 
@@ -547,8 +546,7 @@ $smartphone: '(max-width: 480px)';
                 flex-direction: column;
                 margin-top: 2rem;
                 width: 100%;
-                //border: 1px solid red;
-
+                
                 label {
                     display: block;
                 }
@@ -570,7 +568,7 @@ $smartphone: '(max-width: 480px)';
                     border: none;
                     margin-top: 1.5rem;
                     padding: 1rem 0;
-                    background-color: green;
+                    background-color: orange;
                     color: white;
                     font-size: 1rem;
                     width: 80%;
@@ -642,6 +640,37 @@ $smartphone: '(max-width: 480px)';
         
         @media #{$smartphone} {
             width: 70%;
+        }
+    }
+
+}
+
+.notification {
+    
+    border-radius: 5px;
+    position: fixed;
+    width: 20rem;
+    height: 4rem;
+    margin-left: -10rem;
+    top: -4rem;
+    left: 50%;
+    color: white;
+    font-weight: bolder;
+    background-color: green;
+    
+}
+
+.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: notification;
+    animation-duration: 4s;
+    animation-delay: 0;
+    animation-timing-function: cubic-bezier(0,1.06,.8,.98);
+    @keyframes notification {
+        100% {
+                transform: translateY(5rem);
         }
     }
 
