@@ -190,7 +190,7 @@ p {
   padding-top: 6rem;
 }
 .main__hero .illustration {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,11 +200,11 @@ p {
 }
 @media (max-width: 480px) {
   .main__hero .illustration {
-    width: 100%;
+    width: 90%;
   }
 }
 .main__hero .presentation {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,15 +219,16 @@ p {
 .main__hero .presentation p {
   width: 70%;
   line-height: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 480px) {
   .main__hero .presentation {
-    width: 100%;
+    width: 90%;
     margin-top: 3rem;
   }
   .main__hero .presentation h1 {
     width: 90%;
+    font-size: 2.5rem;
   }
   .main__hero .presentation p {
     width: 90%;
@@ -237,9 +238,7 @@ p {
   .main__hero {
     flex-direction: column-reverse;
     margin-top: 3rem;
-  }
-  .main__hero .presentation h1 {
-    font-size: 2.5rem;
+    align-items: center;
   }
 }
 .main__portfolio {
@@ -284,11 +283,11 @@ p {
 }
 .main__portfolio .project .overview .buttons-container .button {
   display: inline-block;
-  background-color: orange;
+  background-color: #335EFF;
   color: white;
   width: 8rem;
-  height: 2rem;
-  line-height: 2rem;
+  height: 3rem;
+  line-height: 3rem;
   border-radius: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -416,11 +415,11 @@ p {
 }
 .main__certifications .certification .overview .button {
   display: inline-block;
-  background-color: orange;
+  background-color: #335EFF;
   color: white;
   width: 12rem;
-  height: 2rem;
-  line-height: 2rem;
+  height: 3rem;
+  line-height: 3rem;
   border-radius: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -491,7 +490,7 @@ p {
   border: none;
   margin-top: 1.5rem;
   padding: 1rem 0;
-  background-color: orange;
+  background-color: #335EFF;
   color: white;
   font-size: 1rem;
   width: 80%;
