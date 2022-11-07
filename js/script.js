@@ -84,3 +84,10 @@ async function handleSubmit( e ) {
         this.reset();
     }
 }
+
+// 
+const certificationCards = document.querySelectorAll('.certification');
+
+certificationCards.forEach( card => card.addEventListener('click', (e) => {
+    alert(e.currentTarget.childNodes[1].nodeName)
+}))

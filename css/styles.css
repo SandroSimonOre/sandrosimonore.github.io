@@ -386,38 +386,56 @@ p {
   width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .main__certifications h2 {
   text-align: center;
+  margin-bottom: 4rem;
 }
-.main__certifications .certification {
-  padding-top: 8rem;
+.main__certifications .certifications-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.main__certifications .certifications-container .certification {
+  display: flex;
   align-items: center;
-}
-.main__certifications .certification .screenshot {
-  width: 50%;
-}
-.main__certifications .certification .screenshot img {
-  height: 15rem;
+  flex-direction: column;
+  height: 36rem;
+  width: 24%;
+  padding: 1rem;
   border-radius: 5px;
 }
-.main__certifications .certification .overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
+.main__certifications .certifications-container .certification .image-container {
+  width: 13rem;
+  height: 9rem;
+  align-self: center;
 }
-.main__certifications .certification .overview p {
-  line-height: 1.5rem;
+.main__certifications .certifications-container .certification .image-container img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
-.main__certifications .certification .overview .button {
+.main__certifications .certifications-container .certification .title {
+  height: 4rem;
+  width: 13rem;
+  margin: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.main__certifications .certifications-container .certification .title h4 {
+  font-size: 0.7rem;
+  padding: 0.8rem;
+}
+.main__certifications .certifications-container .certification .description {
+  height: 15rem;
+  width: 90%;
+  font-size: 0.9rem;
+}
+.main__certifications .certifications-container .certification .button {
   display: inline-block;
   background-color: #335EFF;
   color: white;
-  width: 12rem;
+  width: 8rem;
   height: 3rem;
   line-height: 3rem;
   border-radius: 5px;
