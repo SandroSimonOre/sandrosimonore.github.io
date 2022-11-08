@@ -187,7 +187,10 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  background-color: black;
+  color: white;
 }
 .main__hero .illustration {
   width: 40%;
@@ -428,36 +431,34 @@ p {
 }
 .main__certifications .certifications-container .certification .description {
   height: 15rem;
-  width: 90%;
+  width: 13rem;
   font-size: 0.9rem;
 }
-.main__certifications .certifications-container .certification .button {
-  display: inline-block;
-  background-color: #335EFF;
-  color: white;
-  width: 8rem;
-  height: 3rem;
-  line-height: 3rem;
-  border-radius: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  text-align: center;
+.main__certifications .certifications-container .certification:hover {
+  background-color: #EFF1F0;
 }
 @media (max-width: 480px) {
   .main__certifications {
     width: 100%;
   }
-  .main__certifications .certification {
-    width: 100%;
-    flex-direction: column-reverse;
-    text-align: center;
-    margin-bottom: 2rem;
+  .main__certifications .certifications-container {
+    flex-direction: column;
   }
-  .main__certifications .certification .overview {
-    margin-bottom: 2rem;
-    width: 80%;
+  .main__certifications .certifications-container .certification {
+    width: 100%;
+  }
+  .main__certifications .certifications-container .certification .image-container {
+    width: 18rem;
+    height: 14rem;
+  }
+  .main__certifications .certifications-container .certification .title {
+    width: 18rem;
+  }
+  .main__certifications .certifications-container .certification .description {
+    width: 18rem;
+  }
+  .main__certifications .certifications-container .certification:hover {
+    background-color: transparent;
   }
 }
 .main__contact {
