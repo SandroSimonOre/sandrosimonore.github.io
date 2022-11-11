@@ -84,3 +84,12 @@ async function handleSubmit( e ) {
         this.reset();
     }
 }
+
+// 
+/*
+const certificationCards = document.querySelectorAll('.certification');
+
+certificationCards.forEach( card => card.addEventListener('mouseover', (e) => {
+    e.currentTarget.classList.toggle('hello')
+}))
+*/

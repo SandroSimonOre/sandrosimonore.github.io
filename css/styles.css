@@ -182,12 +182,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #EFF1F0;
 }
 .main__hero {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  background-color: black;
+  color: white;
 }
 .main__hero .illustration {
   width: 40%;
@@ -242,12 +246,15 @@ p {
   }
 }
 .main__portfolio {
-  margin-top: 7rem;
+  margin: 4rem 0 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 5px;
   width: 75%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 .main__portfolio h2 {
   text-align: center;
@@ -297,8 +304,9 @@ p {
 }
 @media (max-width: 480px) {
   .main__portfolio {
+    margin: 1rem 0 1rem 0;
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
   .main__portfolio .project {
     flex-direction: column;
@@ -311,7 +319,7 @@ p {
     width: 80%;
   }
   .main__portfolio .project .overview {
-    width: 80%;
+    width: 90%;
   }
   .main__portfolio .project .overview .buttons-container {
     display: flex;
@@ -320,9 +328,11 @@ p {
   }
 }
 .main__about {
-  margin-top: 7rem;
+  margin: 4rem 0 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: white;
   width: 75%;
-  padding: 0 1.5rem 0 1.5rem;
 }
 .main__about h2 {
   text-align: center;
@@ -333,15 +343,19 @@ p {
 }
 @media (max-width: 480px) {
   .main__about {
+    margin: 1rem 0 1rem 0;
     width: 90%;
   }
 }
 .main__skills {
+  margin: 4rem 0 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
-  padding-top: 7rem;
 }
 .main__skills .skills-container {
   width: 70%;
@@ -369,6 +383,10 @@ p {
   height: 4rem;
 }
 @media (max-width: 480px) {
+  .main__skills {
+    margin: 1rem 0 1rem 0;
+    width: 90%;
+  }
   .main__skills .skills-container {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -382,72 +400,102 @@ p {
   }
 }
 .main__certifications {
-  margin-top: 7rem;
+  margin: 4rem 0 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 5px;
   width: 75%;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .main__certifications h2 {
   text-align: center;
+  margin-bottom: 4rem;
 }
-.main__certifications .certification {
-  padding-top: 8rem;
+.main__certifications .certifications-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+}
+.main__certifications .certifications-container .certification {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.main__certifications .certification .screenshot {
-  width: 50%;
-}
-.main__certifications .certification .screenshot img {
-  height: 15rem;
-  border-radius: 5px;
-}
-.main__certifications .certification .overview {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-.main__certifications .certification .overview p {
-  line-height: 1.5rem;
-}
-.main__certifications .certification .overview .button {
-  display: inline-block;
-  background-color: #335EFF;
-  color: white;
-  width: 12rem;
-  height: 3rem;
-  line-height: 3rem;
+  height: 25rem;
+  width: 100%;
+  align-self: center;
+  padding: 0.5rem;
   border-radius: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  /* &:hover {
+      background-color: #EFF1F0;
+  } */
+}
+.main__certifications .certifications-container .certification .image-container {
+  width: 100%;
+  height: 18rem;
+  align-self: center;
+}
+.main__certifications .certifications-container .certification .image-container img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main__certifications .certifications-container .certification .title {
+  height: 3rem;
+  width: 100%;
+  margin: 0.5rem;
   text-align: center;
+  background-color: black;
+  color: white;
+}
+.main__certifications .certifications-container .certification .title h4 {
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+}
+.main__certifications .certifications-container .certification .description {
+  height: 15rem;
+  width: 13rem;
+  font-size: 0.9rem;
 }
 @media (max-width: 480px) {
   .main__certifications {
     width: 100%;
+    margin: 1rem 0 1rem 0;
   }
-  .main__certifications .certification {
+  .main__certifications .certifications-container {
+    grid-template-columns: 1fr;
+  }
+  .main__certifications .certifications-container .certification {
+    height: 20rem;
     width: 100%;
-    flex-direction: column-reverse;
-    text-align: center;
-    margin-bottom: 2rem;
+    /* .description {
+        width: 18rem;
+    } */
+    /* &:hover {
+        background-color: transparent;
+    } */
   }
-  .main__certifications .certification .overview {
-    margin-bottom: 2rem;
-    width: 80%;
+  .main__certifications .certifications-container .certification .image-container {
+    width: 20rem;
+    height: 14rem;
+  }
+  .main__certifications .certifications-container .certification .title {
+    width: 20rem;
   }
 }
 .main__contact {
+  margin: 4rem 0 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
-  padding: 7rem 0 3rem 0;
 }
 .main__contact h2 {
   text-align: center;
@@ -500,10 +548,16 @@ p {
 @media (max-width: 480px) {
   .main__contact {
     width: 100%;
+    margin: 1rem 0 1rem 0;
   }
   .main__contact .contact-info,
 .main__contact .contact-form {
     width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    background-color: white;
   }
 }
 

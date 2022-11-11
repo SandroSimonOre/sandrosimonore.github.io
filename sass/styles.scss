@@ -19,6 +19,8 @@ $smartphone: '(max-width: 480px)';
 // $tablet: (min-width: 480px) and (max-width: 728px);
 // $desktop: (min-width: 1024px);
 
+
+
 .header {
 
     width: 100%;
@@ -214,13 +216,17 @@ $smartphone: '(max-width: 480px)';
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: #EFF1F0;
+
     &__hero {
 
         display: flex;
         justify-content: center;
         width: 100%;
-        padding-top: 6rem;
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+        background-color: black;
+        color: white;
     
         .illustration {
 
@@ -282,19 +288,24 @@ $smartphone: '(max-width: 480px)';
         @media #{$smartphone} {
             flex-direction:column-reverse; 
             margin-top: 3rem;
-            align-items: center;;
+            align-items: center;
+
         }
 
     }
 
     &__portfolio {
     
-        margin-top: 7rem;
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 2rem;
+        border-radius: 5px;
+        
         width: 75%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: white;
         
         h2 {
             text-align: center;
@@ -345,9 +356,10 @@ $smartphone: '(max-width: 480px)';
         }
 
         @media #{$smartphone} {
-
+            // portfolio
+            margin: 1rem 0 1rem 0;
             text-align: center;
-            width: 100%;
+            width: 90%;
 
             .project {
                 
@@ -361,7 +373,7 @@ $smartphone: '(max-width: 480px)';
                     }
                 }
                 .overview {
-                    width: 80%;
+                    width: 90%;
                     .buttons-container {
                         display: flex;
                         width: 100%;
@@ -375,9 +387,14 @@ $smartphone: '(max-width: 480px)';
 
     &__about {
         
-        margin-top: 7rem;
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 2rem;
+        border-radius: 5px;
+
+        background-color: white;
+        //margin-top: 7rem;
         width: 75%;
-        padding: 0 1.5rem 0 1.5rem;
+        //padding: 0 1.5rem 0 1.5rem;
         h2 {
             text-align: center;
         }
@@ -388,17 +405,23 @@ $smartphone: '(max-width: 480px)';
         }
 
         @media #{$smartphone} {
+            // about
+            margin: 1rem 0 1rem 0;
             width: 90%;
         }
     }
     
     &__skills {
 
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 2rem;
+        border-radius: 5px;
+
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 75%;
-        padding-top: 7rem;
         
         .skills-container {
 
@@ -430,6 +453,9 @@ $smartphone: '(max-width: 480px)';
         }
 
         @media #{$smartphone} {
+            // skills
+            margin: 1rem 0 1rem 0;
+            width: 90%;
             .skills-container {
                 width: 100%;
                 grid-template-columns: repeat(3, 1fr);
@@ -449,70 +475,141 @@ $smartphone: '(max-width: 480px)';
 
     &__certifications {
         
-        margin-top: 7rem;
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 2rem;
+        border-radius: 5px;
         width: 75%;
+
+        background-color: white;
+        //margin-top: 7rem;
+        
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         
         h2 {
             text-align: center;
+            margin-bottom: 4rem;
         }
 
-        .certification {
-            padding-top: 8rem;
-            display: flex;
-            justify-content: space-between;    
-            align-items: center;
-            
-            .screenshot {
-                width: 50%;
-                
-                img {
-                    height: 15rem;
-                    border-radius: 5px;
-                };
-            }
+        .certifications-container {
 
-            .overview {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 50%;
-                
-                p {
-                    line-height: 1.5rem;
-                }
-
-                @include button('button', #335EFF, white, 12, 3, 3);
-                
-            }
-        }
-
-        @media #{$smartphone} {
-            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            //flex-wrap: wrap;
+            gap: 1rem;
+            //align-items: center;
 
             .certification {
+                //border: 1px solid red;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 25rem;
                 width: 100%;
-                flex-direction: column-reverse;
-                text-align: center;
-                margin-bottom: 2rem;
+                align-self: center;
                 
-                .overview {
-                    margin-bottom: 2rem;
-                    width: 80%;
+                padding: 0.5rem;
+                border-radius: 5px;
+
+                .image-container {
+
+                    width: 100%;
+                    height: 18rem;
+                    align-self: center;
+
+                    img {
+                    
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                    }
+
+                }
+    
+                .title {
+                    height: 3rem;
+                    width: 100%;
+                    margin: 0.5rem;
+                    //border-radius: 4px;
+                    
+                    text-align: center;
+                    background-color: black;
+                    color: white;
+                    
+                    h4 {
+                        //vertical-align: middle;
+                        font-size: 0.8rem;
+                        padding: 0.8rem;
+                        line-height: 1.2rem;
+                        letter-spacing: 1px;
+                    }
+                    
+                }
+    
+                .description {
+                    height: 15rem;
+                    width: 13rem;
+                    font-size: 0.9rem;
+                }
+                
+                /* &:hover {
+                    background-color: #EFF1F0;
+                } */
+                
+            }
+    
+        }
+        
+        @media #{$smartphone} {
+            // certifications
+            width: 100%;
+            margin: 1rem 0 1rem 0;
+            
+            .certifications-container {
+                
+                //flex-direction: column;
+                grid-template-columns: 1fr;
+                .certification {
+                        height: 20rem;
+                        width: 100%;
+                    
+                        .image-container {
+                            width: 20rem;
+                            height: 14rem;
+                            
+                        }
+
+                        .title {
+                            width: 20rem;
+                        }
+                        
+                        /* .description {
+                            width: 18rem;
+                        } */
+                        /* &:hover {
+                            background-color: transparent;
+                        } */
+                    
                 }
             }
+            
         }
     }
     
     &__contact {
+        
+        margin: 4rem 0 4rem 0;
+        padding: 3rem 2rem;
+        border-radius: 5px;
 
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 75%;
-        padding: 7rem 0 3rem 0;
+        //padding: 7rem 0 3rem 0;
         
         h2 {
             text-align: center;
@@ -575,7 +672,9 @@ $smartphone: '(max-width: 480px)';
         }
         
         @media #{$smartphone} {
+            // contact
             width: 100%;
+            margin: 1rem 0 1rem 0;
 
             .contact-info,
             .contact-form {
@@ -583,6 +682,12 @@ $smartphone: '(max-width: 480px)';
             }
         }
     }
+
+    @media #{$smartphone} {
+        // main
+        background-color: white;
+    }
+
 }
 
 .footer {
