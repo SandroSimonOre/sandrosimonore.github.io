@@ -584,6 +584,7 @@ p {
   background-color: white;
   width: 4rem;
   height: 4rem;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -596,6 +597,7 @@ p {
 .footer__social-media .icon-container .title {
   color: white;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   height: 2.5rem;
